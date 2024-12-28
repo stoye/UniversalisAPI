@@ -1,13 +1,17 @@
 import logging
 import asyncio
 from collections.abc import Iterable
+from typing import Any
 
 import aiohttp
+import async_property
 
 from .decos import timed
+from .wrapper import UniversalisAPIWrapper
 from .exceptions import UniversalisError
 
-class UniversalisAPIClient:
+
+class UniversalisAPIClient(UniversalisAPIWrapper):
     """
     Asynchronous client for accessing Universalis.app's API endpoints.
     Parameters
@@ -18,61 +22,22 @@ class UniversalisAPIClient:
         This client's aiohttp session (will be created if not provided
     """
 
-    base_url = "https://universalis.app/api/v2"
-
     def __init__(self, api_key: str = '', session: aiohttp.ClientSession | None = None) -> None:
+        super().__init__(session)
         self.api_key = api_key
-        self._session = session
 
-    @property
-    def session(self) -> aiohttp.ClientSession:
-        if self._session is None or self._session.closed:
-            self._session = aiohttp.ClientSession()
-        return self._session
+        self._worlds = {}
+        self._dcs = {}
 
-    async def _process_response(self, response: aiohttp.ClientResponse) -> dict[str, str] | list:
-        """
-        Check response for errors, and if none are found, pass along response json.
-
-        :param response: aiohttp.ClientResponse object result from self.session.get() call
-        :return: Dict or List of the json from the response object
-        :raise: UniversalisError if non-200 status code
-        """
-        if response.status != 200:
-            raise UniversalisError(f"{response.status} code received")
-        else:
-            return await response.json()
-
-    async def get_url_endpoint(self, endpoint: str, params: dict[str, str] = None) -> dict[str, str] | list:
-        """
-        Create and process a request to the Universalis API at the given endpoint with the given parameters if specified
-        :param endpoint: the specific endpoint to request
-        :param params: optional parameters (added as ?key=value)
-        :return: The JSON response from Universalis as a Dictionary or List
-        """
-        # generate the full url to request
-        url = self.base_url + endpoint
-        if params is None:
-            params = {}
-        # send request
-        async with self.session.get(url, params=params) as response:
-            return await self._process_response(response)
-
-    @timed
+    @async_property.async_cached_property
     async def data_centers(self) -> list[dict]:
         """
-        Return a list of Data Centers supported by the API
-
-        List of Dictionaries of DCs containing:
-        'name' -> str DC name
-        'region' -> str Global region
-        'worlds' -> list[int] of World IDs
-        :return: list[dict] of DCs
+        Cached list of data center info supported by Universalis API
+        :return:
         """
-        # endpoint
-        endpoint = '/data-centers'
-        # get response
-        return await self.get_url_endpoint(endpoint)
+        if not self._dcs:
+            self._dcs = await self.get_endpoint('/data-centers')
+        return self._dcs
 
     @timed
     async def data_center_names(self) -> list[str]:
@@ -80,10 +45,8 @@ class UniversalisAPIClient:
         Get a list of DC names supported by the API
         :return: list[str] of DC names
         """
-        resp = await self.data_centers()
-        dcs = []
-        for dc in resp:
-            dcs.append(dc['name'])
+        resp = await self.data_centers
+        dcs = [dc['name'] for dc in resp]
         return dcs
 
     @timed
@@ -92,13 +55,13 @@ class UniversalisAPIClient:
         Get a dict of DC names mapped to a list of World IDs
         :return: dict[str, list[int]] of DC name->World IDs
         """
-        resp = await self.data_centers()
+        resp = await self.data_centers
         dcs = {}
         for dc in resp:
             dcs[dc['name']] = dc['worlds']
         return dcs
 
-    @timed
+    @async_property.async_cached_property
     async def worlds(self) -> list[dict]:
         """
         Return a list of World id->name dicts supported by the API
@@ -108,10 +71,9 @@ class UniversalisAPIClient:
         'name' -> str World name
         :return: list[dict] of Worlds
         """
-        #endpoint
-        endpoint = '/worlds'
-        # get response
-        return await self.get_url_endpoint(endpoint)
+        if not self._worlds:
+            self._worlds = await self.get_endpoint('/worlds')
+        return self._worlds
 
     @timed
     async def world_names(self) -> list[str]:
@@ -119,14 +81,12 @@ class UniversalisAPIClient:
         Return a list of World names supported by the API
         :return: a list of World names
         """
-        worlds = []
-        resp = await self.worlds()
-        for world in resp:
-            worlds.append(world['name'])
+        resp = await self.worlds
+        worlds = [world['name'] for world in resp]
         return worlds
 
     @timed
-    async def current_item_price_data(self, region: str, item_ids: Iterable[int]) -> dict:
+    async def current_item_price_data(self, region: str, item_ids: list[int]) -> dict:
         """
         Get aggregated market board data for the given items in the given region
 
@@ -139,13 +99,15 @@ class UniversalisAPIClient:
         :return: Dict of the full response from Universalis (for more functionality see other methods)
         """
         endpoint = f'/aggregated/{region}/{",".join(map(str,item_ids))}'
-        return await self.get_url_endpoint(endpoint)
+        return await self.get_endpoint(endpoint)
 
-    def _parse_region_data(self, data: dict):
+    @staticmethod
+    def parse_region_data(data: dict[str, Any]) -> Any:
         """
-        Return the most relevant data from a region dataset
-        :param data:
+        Return the most relevant data from a region dataset (world, then dc, then region)
+        :param data: dict of data to be parsed
         :return:
+        :raises: UniversaliseError if no region data is found
         """
         if 'world' in data:
             return data['world']
@@ -157,7 +119,7 @@ class UniversalisAPIClient:
             raise UniversalisError("region data not found")
 
     @timed
-    async def current_item_price(self, region: str, item_ids: Iterable[int], hq: bool = True) -> dict[int, int]:
+    async def current_item_price(self, region: str, item_ids: list[int], hq: bool = True) -> dict[int, int]:
         """
         Get the average sale price for the given list of items in the given region
 
@@ -172,17 +134,16 @@ class UniversalisAPIClient:
 
         for item in item_data['results']:
             asp_hq_info = item['hq']['averageSalePrice']
-            avg_price = 0
             if hq and asp_hq_info:
-                avg_price = self._parse_region_data(asp_hq_info)['price']
+                avg_price = self.parse_region_data(asp_hq_info)['price']
             else:
-                avg_price = self._parse_region_data(item['nq']['averageSalePrice'])['price']
+                avg_price = self.parse_region_data(item['nq']['averageSalePrice'])['price']
             avg_prices[item['itemId']] = round(avg_price)
 
         return avg_prices
 
     @timed
-    async def least_recent_items(self, world: str = '', dc: str = '', entries: int = None) -> list[dict]:
+    async def least_recent_items(self, world: str = None, dc: str = None, entries: int = None) -> list[dict]:
         """
         Get a list of the least recently updated items in Universalis. Must supply a world or DC
         :param world: the world to get a list for
@@ -192,19 +153,27 @@ class UniversalisAPIClient:
         """
         endpoint = '/extra/stats/least-recently-updated'
         params = {}
-        if entries and 0 < entries <= 200:
+        if entries is not None and 0 < entries <= 200:
             params['entries'] = entries
-        if not world and not dc:
-            raise UniversalisError("must supply world or dc for least recent items request")
         if world:
             params['world'] = world
-        else:
+        elif dc:
             params['dcName'] = dc
+        else:
+            raise UniversalisError("Must supply world or dc name for least recent items request")
 
-        return await self.get_url_endpoint(endpoint, params=params)
+        return await self.get_endpoint(endpoint, params=params)
 
     @timed
-    async def mb_current_data(self, item_ids: Iterable[int], region: str, listings: int = None, entries: int = None, hq: bool = None, stats_within: int = None, entries_within: int = None, fields: Iterable[str] = None) -> dict:
+    async def mb_current_data(self,
+                              item_ids: list[int],
+                              region: str,
+                              listings: int = None,
+                              entries: int = None,
+                              hq: bool = None,
+                              stats_within: int = None,
+                              entries_within: int = None,
+                              fields: list[str] = None) -> dict:
         """
         Return the current market board data for the given list of items in the given region.
         :param item_ids: list of items to return data for
@@ -232,4 +201,4 @@ class UniversalisAPIClient:
         if fields is not None:
             params['fields'] = ','.join(fields)
 
-        return await self.get_url_endpoint(endpoint, params=params)
+        return await self.get_endpoint(endpoint, params=params)
