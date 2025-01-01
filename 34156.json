@@ -1,0 +1,4169 @@
+{
+    "schema": "exdschema@48db4b87e3afd753676f96a804d06a97347cc11d-2024.11.06.0000.0000",
+    "row_id": 34156,
+    "fields": {
+        "AdditionalData": {
+            "value": 0
+        },
+        "Adjective": 0,
+        "AetherialReduce": 0,
+        "AlwaysCollectable": false,
+        "Article": 0,
+        "BaseParam": [
+            {
+                "value": 1,
+                "sheet": "BaseParam",
+                "row_id": 1,
+                "fields": {
+                    "BraceletPercent": 67,
+                    "ChestHeadLegsFeetPercent": 440,
+                    "ChestHeadPercent": 220,
+                    "ChestLegsFeetPercent": 355,
+                    "ChestLegsGlovesPercent": 355,
+                    "ChestPercent": 135,
+                    "Description": "Affects physical damage dealt by gladiator's arms, marauder's arms, dark knight's arms, gunbreaker's arms, pugilist's arms, lancer's arms, samurai's arms, reaper's arms, thaumaturge's arms, arcanist's arms, red mage's arms, pictomancer's arms, conjurer's arms, astrologian's arms, sage's arms, and blue mage's arms.",
+                    "EarringPercent": 67,
+                    "FeetPercent": 85,
+                    "HandsPercent": 85,
+                    "HeadChestHandsLegsFeetPercent": 525,
+                    "HeadPercent": 85,
+                    "LegsFeetPercent": 220,
+                    "LegsPercent": 135,
+                    "MeldParam": [
+                        90,
+                        100,
+                        100,
+                        100,
+                        70,
+                        70,
+                        70,
+                        100,
+                        70,
+                        100,
+                        100,
+                        70,
+                        70
+                    ],
+                    "Name": "Strength",
+                    "NecklacePercent": 67,
+                    "OffHandPercent": 40,
+                    "OneHandWeaponPercent": 100,
+                    "OrderPriority": 12,
+                    "PacketIndex": 0,
+                    "RingPercent": 67,
+                    "TwoHandWeaponPercent": 140,
+                    "UnderArmorPercent": 70,
+                    "Unknown0": 0,
+                    "Unknown1": 220,
+                    "Unknown2": false,
+                    "WaistPercent": 0
+                }
+            },
+            {
+                "value": 3,
+                "sheet": "BaseParam",
+                "row_id": 3,
+                "fields": {
+                    "BraceletPercent": 67,
+                    "ChestHeadLegsFeetPercent": 440,
+                    "ChestHeadPercent": 220,
+                    "ChestLegsFeetPercent": 355,
+                    "ChestLegsGlovesPercent": 355,
+                    "ChestPercent": 135,
+                    "Description": "Affects maximum HP.",
+                    "EarringPercent": 67,
+                    "FeetPercent": 85,
+                    "HandsPercent": 85,
+                    "HeadChestHandsLegsFeetPercent": 525,
+                    "HeadPercent": 85,
+                    "LegsFeetPercent": 220,
+                    "LegsPercent": 135,
+                    "MeldParam": [
+                        90,
+                        100,
+                        100,
+                        100,
+                        100,
+                        90,
+                        90,
+                        100,
+                        90,
+                        100,
+                        100,
+                        100,
+                        100
+                    ],
+                    "Name": "Vitality",
+                    "NecklacePercent": 67,
+                    "OffHandPercent": 40,
+                    "OneHandWeaponPercent": 100,
+                    "OrderPriority": 14,
+                    "PacketIndex": 2,
+                    "RingPercent": 67,
+                    "TwoHandWeaponPercent": 140,
+                    "UnderArmorPercent": 70,
+                    "Unknown0": 0,
+                    "Unknown1": 220,
+                    "Unknown2": false,
+                    "WaistPercent": 0
+                }
+            },
+            {
+                "value": 22,
+                "sheet": "BaseParam",
+                "row_id": 22,
+                "fields": {
+                    "BraceletPercent": 67,
+                    "ChestHeadLegsFeetPercent": 440,
+                    "ChestHeadPercent": 220,
+                    "ChestLegsFeetPercent": 355,
+                    "ChestLegsGlovesPercent": 355,
+                    "ChestPercent": 135,
+                    "Description": "Affects the rate at which your physical and magic attacks land direct hits, dealing slightly more damage than normal hits. The higher the value, the higher the frequency with which your hits will be direct. Higher values will also result in greater damage for actions which guarantee direct hits.",
+                    "EarringPercent": 67,
+                    "FeetPercent": 85,
+                    "HandsPercent": 85,
+                    "HeadChestHandsLegsFeetPercent": 525,
+                    "HeadPercent": 85,
+                    "LegsFeetPercent": 220,
+                    "LegsPercent": 135,
+                    "MeldParam": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ],
+                    "Name": "Direct Hit Rate",
+                    "NecklacePercent": 67,
+                    "OffHandPercent": 40,
+                    "OneHandWeaponPercent": 100,
+                    "OrderPriority": 23,
+                    "PacketIndex": 15,
+                    "RingPercent": 67,
+                    "TwoHandWeaponPercent": 140,
+                    "UnderArmorPercent": 70,
+                    "Unknown0": 0,
+                    "Unknown1": 220,
+                    "Unknown2": false,
+                    "WaistPercent": 0
+                }
+            },
+            {
+                "value": 27,
+                "sheet": "BaseParam",
+                "row_id": 27,
+                "fields": {
+                    "BraceletPercent": 67,
+                    "ChestHeadLegsFeetPercent": 440,
+                    "ChestHeadPercent": 220,
+                    "ChestLegsFeetPercent": 355,
+                    "ChestLegsGlovesPercent": 355,
+                    "ChestPercent": 135,
+                    "Description": "Affects the amount of physical and magic damage dealt, as well as HP restored. The higher the value, the higher the frequency with which your hits will be critical/higher the potency of critical hits.",
+                    "EarringPercent": 67,
+                    "FeetPercent": 85,
+                    "HandsPercent": 85,
+                    "HeadChestHandsLegsFeetPercent": 525,
+                    "HeadPercent": 85,
+                    "LegsFeetPercent": 220,
+                    "LegsPercent": 135,
+                    "MeldParam": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ],
+                    "Name": "Critical Hit",
+                    "NecklacePercent": 67,
+                    "OffHandPercent": 40,
+                    "OneHandWeaponPercent": 100,
+                    "OrderPriority": 19,
+                    "PacketIndex": 18,
+                    "RingPercent": 67,
+                    "TwoHandWeaponPercent": 140,
+                    "UnderArmorPercent": 70,
+                    "Unknown0": 0,
+                    "Unknown1": 220,
+                    "Unknown2": false,
+                    "WaistPercent": 0
+                }
+            },
+            {
+                "value": 0,
+                "sheet": "BaseParam",
+                "row_id": 0,
+                "fields": {
+                    "BraceletPercent": 0,
+                    "ChestHeadLegsFeetPercent": 0,
+                    "ChestHeadPercent": 0,
+                    "ChestLegsFeetPercent": 0,
+                    "ChestLegsGlovesPercent": 0,
+                    "ChestPercent": 0,
+                    "Description": "",
+                    "EarringPercent": 0,
+                    "FeetPercent": 0,
+                    "HandsPercent": 0,
+                    "HeadChestHandsLegsFeetPercent": 0,
+                    "HeadPercent": 0,
+                    "LegsFeetPercent": 0,
+                    "LegsPercent": 0,
+                    "MeldParam": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ],
+                    "Name": "",
+                    "NecklacePercent": 0,
+                    "OffHandPercent": 0,
+                    "OneHandWeaponPercent": 0,
+                    "OrderPriority": 0,
+                    "PacketIndex": -1,
+                    "RingPercent": 0,
+                    "TwoHandWeaponPercent": 0,
+                    "UnderArmorPercent": 0,
+                    "Unknown0": 0,
+                    "Unknown1": 0,
+                    "Unknown2": false,
+                    "WaistPercent": 0
+                }
+            },
+            {
+                "value": 0,
+                "sheet": "BaseParam",
+                "row_id": 0,
+                "fields": {
+                    "BraceletPercent": 0,
+                    "ChestHeadLegsFeetPercent": 0,
+                    "ChestHeadPercent": 0,
+                    "ChestLegsFeetPercent": 0,
+                    "ChestLegsGlovesPercent": 0,
+                    "ChestPercent": 0,
+                    "Description": "",
+                    "EarringPercent": 0,
+                    "FeetPercent": 0,
+                    "HandsPercent": 0,
+                    "HeadChestHandsLegsFeetPercent": 0,
+                    "HeadPercent": 0,
+                    "LegsFeetPercent": 0,
+                    "LegsPercent": 0,
+                    "MeldParam": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ],
+                    "Name": "",
+                    "NecklacePercent": 0,
+                    "OffHandPercent": 0,
+                    "OneHandWeaponPercent": 0,
+                    "OrderPriority": 0,
+                    "PacketIndex": -1,
+                    "RingPercent": 0,
+                    "TwoHandWeaponPercent": 0,
+                    "UnderArmorPercent": 0,
+                    "Unknown0": 0,
+                    "Unknown1": 0,
+                    "Unknown2": false,
+                    "WaistPercent": 0
+                }
+            }
+        ],
+        "BaseParamModifier": 3,
+        "BaseParamSpecial": [
+            {
+                "value": 0,
+                "sheet": "BaseParam",
+                "row_id": 0,
+                "fields": {
+                    "BraceletPercent": 0,
+                    "ChestHeadLegsFeetPercent": 0,
+                    "ChestHeadPercent": 0,
+                    "ChestLegsFeetPercent": 0,
+                    "ChestLegsGlovesPercent": 0,
+                    "ChestPercent": 0,
+                    "Description": "",
+                    "EarringPercent": 0,
+                    "FeetPercent": 0,
+                    "HandsPercent": 0,
+                    "HeadChestHandsLegsFeetPercent": 0,
+                    "HeadPercent": 0,
+                    "LegsFeetPercent": 0,
+                    "LegsPercent": 0,
+                    "MeldParam": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ],
+                    "Name": "",
+                    "NecklacePercent": 0,
+                    "OffHandPercent": 0,
+                    "OneHandWeaponPercent": 0,
+                    "OrderPriority": 0,
+                    "PacketIndex": -1,
+                    "RingPercent": 0,
+                    "TwoHandWeaponPercent": 0,
+                    "UnderArmorPercent": 0,
+                    "Unknown0": 0,
+                    "Unknown1": 0,
+                    "Unknown2": false,
+                    "WaistPercent": 0
+                }
+            },
+            {
+                "value": 0,
+                "sheet": "BaseParam",
+                "row_id": 0,
+                "fields": {
+                    "BraceletPercent": 0,
+                    "ChestHeadLegsFeetPercent": 0,
+                    "ChestHeadPercent": 0,
+                    "ChestLegsFeetPercent": 0,
+                    "ChestLegsGlovesPercent": 0,
+                    "ChestPercent": 0,
+                    "Description": "",
+                    "EarringPercent": 0,
+                    "FeetPercent": 0,
+                    "HandsPercent": 0,
+                    "HeadChestHandsLegsFeetPercent": 0,
+                    "HeadPercent": 0,
+                    "LegsFeetPercent": 0,
+                    "LegsPercent": 0,
+                    "MeldParam": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ],
+                    "Name": "",
+                    "NecklacePercent": 0,
+                    "OffHandPercent": 0,
+                    "OneHandWeaponPercent": 0,
+                    "OrderPriority": 0,
+                    "PacketIndex": -1,
+                    "RingPercent": 0,
+                    "TwoHandWeaponPercent": 0,
+                    "UnderArmorPercent": 0,
+                    "Unknown0": 0,
+                    "Unknown1": 0,
+                    "Unknown2": false,
+                    "WaistPercent": 0
+                }
+            },
+            {
+                "value": 0,
+                "sheet": "BaseParam",
+                "row_id": 0,
+                "fields": {
+                    "BraceletPercent": 0,
+                    "ChestHeadLegsFeetPercent": 0,
+                    "ChestHeadPercent": 0,
+                    "ChestLegsFeetPercent": 0,
+                    "ChestLegsGlovesPercent": 0,
+                    "ChestPercent": 0,
+                    "Description": "",
+                    "EarringPercent": 0,
+                    "FeetPercent": 0,
+                    "HandsPercent": 0,
+                    "HeadChestHandsLegsFeetPercent": 0,
+                    "HeadPercent": 0,
+                    "LegsFeetPercent": 0,
+                    "LegsPercent": 0,
+                    "MeldParam": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ],
+                    "Name": "",
+                    "NecklacePercent": 0,
+                    "OffHandPercent": 0,
+                    "OneHandWeaponPercent": 0,
+                    "OrderPriority": 0,
+                    "PacketIndex": -1,
+                    "RingPercent": 0,
+                    "TwoHandWeaponPercent": 0,
+                    "UnderArmorPercent": 0,
+                    "Unknown0": 0,
+                    "Unknown1": 0,
+                    "Unknown2": false,
+                    "WaistPercent": 0
+                }
+            },
+            {
+                "value": 0,
+                "sheet": "BaseParam",
+                "row_id": 0,
+                "fields": {
+                    "BraceletPercent": 0,
+                    "ChestHeadLegsFeetPercent": 0,
+                    "ChestHeadPercent": 0,
+                    "ChestLegsFeetPercent": 0,
+                    "ChestLegsGlovesPercent": 0,
+                    "ChestPercent": 0,
+                    "Description": "",
+                    "EarringPercent": 0,
+                    "FeetPercent": 0,
+                    "HandsPercent": 0,
+                    "HeadChestHandsLegsFeetPercent": 0,
+                    "HeadPercent": 0,
+                    "LegsFeetPercent": 0,
+                    "LegsPercent": 0,
+                    "MeldParam": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ],
+                    "Name": "",
+                    "NecklacePercent": 0,
+                    "OffHandPercent": 0,
+                    "OneHandWeaponPercent": 0,
+                    "OrderPriority": 0,
+                    "PacketIndex": -1,
+                    "RingPercent": 0,
+                    "TwoHandWeaponPercent": 0,
+                    "UnderArmorPercent": 0,
+                    "Unknown0": 0,
+                    "Unknown1": 0,
+                    "Unknown2": false,
+                    "WaistPercent": 0
+                }
+            },
+            {
+                "value": 0,
+                "sheet": "BaseParam",
+                "row_id": 0,
+                "fields": {
+                    "BraceletPercent": 0,
+                    "ChestHeadLegsFeetPercent": 0,
+                    "ChestHeadPercent": 0,
+                    "ChestLegsFeetPercent": 0,
+                    "ChestLegsGlovesPercent": 0,
+                    "ChestPercent": 0,
+                    "Description": "",
+                    "EarringPercent": 0,
+                    "FeetPercent": 0,
+                    "HandsPercent": 0,
+                    "HeadChestHandsLegsFeetPercent": 0,
+                    "HeadPercent": 0,
+                    "LegsFeetPercent": 0,
+                    "LegsPercent": 0,
+                    "MeldParam": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ],
+                    "Name": "",
+                    "NecklacePercent": 0,
+                    "OffHandPercent": 0,
+                    "OneHandWeaponPercent": 0,
+                    "OrderPriority": 0,
+                    "PacketIndex": -1,
+                    "RingPercent": 0,
+                    "TwoHandWeaponPercent": 0,
+                    "UnderArmorPercent": 0,
+                    "Unknown0": 0,
+                    "Unknown1": 0,
+                    "Unknown2": false,
+                    "WaistPercent": 0
+                }
+            },
+            {
+                "value": 0,
+                "sheet": "BaseParam",
+                "row_id": 0,
+                "fields": {
+                    "BraceletPercent": 0,
+                    "ChestHeadLegsFeetPercent": 0,
+                    "ChestHeadPercent": 0,
+                    "ChestLegsFeetPercent": 0,
+                    "ChestLegsGlovesPercent": 0,
+                    "ChestPercent": 0,
+                    "Description": "",
+                    "EarringPercent": 0,
+                    "FeetPercent": 0,
+                    "HandsPercent": 0,
+                    "HeadChestHandsLegsFeetPercent": 0,
+                    "HeadPercent": 0,
+                    "LegsFeetPercent": 0,
+                    "LegsPercent": 0,
+                    "MeldParam": [
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100,
+                        100
+                    ],
+                    "Name": "",
+                    "NecklacePercent": 0,
+                    "OffHandPercent": 0,
+                    "OneHandWeaponPercent": 0,
+                    "OrderPriority": 0,
+                    "PacketIndex": -1,
+                    "RingPercent": 0,
+                    "TwoHandWeaponPercent": 0,
+                    "UnderArmorPercent": 0,
+                    "Unknown0": 0,
+                    "Unknown1": 0,
+                    "Unknown2": false,
+                    "WaistPercent": 0
+                }
+            }
+        ],
+        "BaseParamValue": [
+            207,
+            216,
+            204,
+            143,
+            0,
+            0
+        ],
+        "BaseParamValueSpecial": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "Block": 0,
+        "BlockRate": 0,
+        "CanBeHq": false,
+        "CastTimeSeconds": 2,
+        "ClassJobCategory": {
+            "value": 41,
+            "sheet": "ClassJobCategory",
+            "row_id": 41,
+            "fields": {
+                "ACN": false,
+                "ADV": false,
+                "ALC": false,
+                "ARC": false,
+                "ARM": false,
+                "AST": false,
+                "BLM": false,
+                "BLU": false,
+                "BRD": false,
+                "BSM": false,
+                "BTN": false,
+                "CNJ": false,
+                "CRP": false,
+                "CUL": false,
+                "DNC": false,
+                "DRG": false,
+                "DRK": false,
+                "FSH": false,
+                "GLA": false,
+                "GNB": false,
+                "GSM": false,
+                "LNC": false,
+                "LTW": false,
+                "MCH": false,
+                "MIN": false,
+                "MNK": true,
+                "MRD": false,
+                "NIN": false,
+                "Name": "PGL MNK",
+                "PCT": false,
+                "PGL": true,
+                "PLD": false,
+                "RDM": false,
+                "ROG": false,
+                "RPR": false,
+                "SAM": false,
+                "SCH": false,
+                "SGE": false,
+                "SMN": false,
+                "THM": false,
+                "VPR": false,
+                "WAR": false,
+                "WHM": false,
+                "WVR": false
+            }
+        },
+        "ClassJobRepair": {
+            "value": 9,
+            "sheet": "ClassJob",
+            "row_id": 9,
+            "fields": {
+                "Abbreviation": "BSM",
+                "BattleClassIndex": -1,
+                "CanQueueForDuty": false,
+                "ClassJobCategory": {
+                    "value": 33,
+                    "sheet": "ClassJobCategory",
+                    "row_id": 33,
+                    "fields": {
+                        "ACN": false,
+                        "ADV": false,
+                        "ALC": true,
+                        "ARC": false,
+                        "ARM": true,
+                        "AST": false,
+                        "BLM": false,
+                        "BLU": false,
+                        "BRD": false,
+                        "BSM": true,
+                        "BTN": false,
+                        "CNJ": false,
+                        "CRP": true,
+                        "CUL": true,
+                        "DNC": false,
+                        "DRG": false,
+                        "DRK": false,
+                        "FSH": false,
+                        "GLA": false,
+                        "GNB": false,
+                        "GSM": true,
+                        "LNC": false,
+                        "LTW": true,
+                        "MCH": false,
+                        "MIN": false,
+                        "MNK": false,
+                        "MRD": false,
+                        "NIN": false,
+                        "Name": "Disciple of the Hand",
+                        "PCT": false,
+                        "PGL": false,
+                        "PLD": false,
+                        "RDM": false,
+                        "ROG": false,
+                        "RPR": false,
+                        "SAM": false,
+                        "SCH": false,
+                        "SGE": false,
+                        "SMN": false,
+                        "THM": false,
+                        "VPR": false,
+                        "WAR": false,
+                        "WHM": false,
+                        "WVR": true
+                    }
+                },
+                "ClassJobParent": {
+                    "value": 9,
+                    "sheet": "ClassJob",
+                    "row_id": 9,
+                    "fields": {
+                        "Abbreviation": "BSM",
+                        "BattleClassIndex": -1,
+                        "CanQueueForDuty": false,
+                        "ClassJobCategory": {
+                            "value": 33
+                        },
+                        "ClassJobParent": {
+                            "value": 9
+                        },
+                        "DohDolJobIndex": 1,
+                        "ExpArrayIndex": 8,
+                        "IsLimitedJob": false,
+                        "ItemSoulCrystal": {
+                            "value": 10338
+                        },
+                        "ItemStartingWeapon": {
+                            "value": 0
+                        },
+                        "JobIndex": 0,
+                        "LimitBreak1": {
+                            "value": 0
+                        },
+                        "LimitBreak2": {
+                            "value": 0
+                        },
+                        "LimitBreak3": {
+                            "value": 0
+                        },
+                        "ModifierDexterity": 90,
+                        "ModifierHitPoints": 100,
+                        "ModifierIntelligence": 90,
+                        "ModifierManaPoints": 100,
+                        "ModifierMind": 100,
+                        "ModifierPiety": 100,
+                        "ModifierStrength": 105,
+                        "ModifierVitality": 90,
+                        "MonsterNote": {
+                            "value": 127
+                        },
+                        "Name": "blacksmith",
+                        "NameEnglish": "Blacksmith",
+                        "PartyBonus": 7,
+                        "Prerequisite": {
+                            "value": 0
+                        },
+                        "PrimaryStat": 0,
+                        "PvPActionSortRow": 0,
+                        "RelicQuest": {
+                            "value": 0
+                        },
+                        "Role": 0,
+                        "StartingLevel": 1,
+                        "StartingTown": {
+                            "value": 0
+                        },
+                        "UIPriority": 102,
+                        "Unknown0": "鍛",
+                        "Unknown1": 0,
+                        "Unknown10": 0,
+                        "Unknown11": 0,
+                        "Unknown2": 100,
+                        "Unknown3": 100,
+                        "Unknown4": 100,
+                        "Unknown5": 100,
+                        "Unknown6": 100,
+                        "Unknown7": 100,
+                        "Unknown8": 0,
+                        "Unknown9": 0,
+                        "Unknown_70_1": 0,
+                        "Unknown_70_2": 0,
+                        "UnlockQuest": {
+                            "value": 0
+                        }
+                    }
+                },
+                "DohDolJobIndex": 1,
+                "ExpArrayIndex": 8,
+                "IsLimitedJob": false,
+                "ItemSoulCrystal": {
+                    "value": 10338,
+                    "sheet": "Item",
+                    "row_id": 10338,
+                    "fields": {
+                        "AdditionalData": {
+                            "value": 0
+                        },
+                        "Adjective": 0,
+                        "AetherialReduce": 0,
+                        "AlwaysCollectable": false,
+                        "Article": 0,
+                        "BaseParam": [
+                            {
+                                "value": 70
+                            },
+                            {
+                                "value": 71
+                            },
+                            {
+                                "value": 11
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            }
+                        ],
+                        "BaseParamModifier": 0,
+                        "BaseParamSpecial": [
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            }
+                        ],
+                        "BaseParamValue": [
+                            20,
+                            20,
+                            15,
+                            0,
+                            0,
+                            0
+                        ],
+                        "BaseParamValueSpecial": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "Block": 0,
+                        "BlockRate": 0,
+                        "CanBeHq": false,
+                        "CastTimeSeconds": 2,
+                        "ClassJobCategory": {
+                            "value": 10
+                        },
+                        "ClassJobRepair": {
+                            "value": 0
+                        },
+                        "ClassJobUse": {
+                            "value": 9
+                        },
+                        "Cooldowns": 0,
+                        "DamageMag": 0,
+                        "DamagePhys": 0,
+                        "DefenseMag": 0,
+                        "DefensePhys": 0,
+                        "Delayms": 0,
+                        "Description": "Upon the back of this crystal plaque are engraved the myriad creations of blacksmiths from eras past.",
+                        "Desynth": 0,
+                        "DyeCount": 0,
+                        "EquipRestriction": 1,
+                        "EquipSlotCategory": {
+                            "value": 17
+                        },
+                        "FilterGroup": 16,
+                        "GrandCompany": {
+                            "value": 0
+                        },
+                        "Icon": {
+                            "id": 26044,
+                            "path": "ui/icon/026000/026044.tex",
+                            "path_hr1": "ui/icon/026000/026044_hr1.tex"
+                        },
+                        "IsAdvancedMeldingPermitted": false,
+                        "IsCollectable": false,
+                        "IsCrestWorthy": false,
+                        "IsGlamorous": false,
+                        "IsIndisposable": true,
+                        "IsPvP": false,
+                        "IsUnique": true,
+                        "IsUntradable": true,
+                        "ItemAction": {
+                            "value": 0
+                        },
+                        "ItemGlamour": {
+                            "value": 0
+                        },
+                        "ItemRepair": {
+                            "value": 0
+                        },
+                        "ItemSearchCategory": {
+                            "value": 0
+                        },
+                        "ItemSeries": {
+                            "value": 0
+                        },
+                        "ItemSortCategory": {
+                            "value": 5
+                        },
+                        "ItemSpecialBonus": {
+                            "value": 0
+                        },
+                        "ItemSpecialBonusParam": 0,
+                        "ItemUICategory": {
+                            "value": 62
+                        },
+                        "LevelEquip": 55,
+                        "LevelItem": {
+                            "value": 136
+                        },
+                        "Lot": false,
+                        "MateriaSlotCount": 0,
+                        "MaterializeType": 0,
+                        "ModelMain": 0,
+                        "ModelSub": 0,
+                        "Name": "Soul of the Blacksmith",
+                        "Plural": "Souls of the Blacksmith",
+                        "PossessivePronoun": 0,
+                        "PriceLow": 0,
+                        "PriceMid": 2,
+                        "Pronoun": 0,
+                        "Rarity": 1,
+                        "RequiredPvpRank": 0,
+                        "Singular": "Soul of the Blacksmith",
+                        "StackSize": 1,
+                        "StartsWithVowel": 0,
+                        "SubStatCategory": 0,
+                        "Unknown0": 1,
+                        "Unknown2": 0,
+                        "Unknown3": 0,
+                        "Unknown4": 51000
+                    }
+                },
+                "ItemStartingWeapon": {
+                    "value": 0,
+                    "sheet": "Item",
+                    "row_id": 0,
+                    "fields": {
+                        "AdditionalData": {
+                            "value": 0
+                        },
+                        "Adjective": 0,
+                        "AetherialReduce": 0,
+                        "AlwaysCollectable": false,
+                        "Article": 0,
+                        "BaseParam": [
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            }
+                        ],
+                        "BaseParamModifier": 0,
+                        "BaseParamSpecial": [
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            }
+                        ],
+                        "BaseParamValue": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "BaseParamValueSpecial": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "Block": 0,
+                        "BlockRate": 0,
+                        "CanBeHq": false,
+                        "CastTimeSeconds": 2,
+                        "ClassJobCategory": {
+                            "value": 0
+                        },
+                        "ClassJobRepair": {
+                            "value": 0
+                        },
+                        "ClassJobUse": {
+                            "value": 0
+                        },
+                        "Cooldowns": 0,
+                        "DamageMag": 0,
+                        "DamagePhys": 0,
+                        "DefenseMag": 0,
+                        "DefensePhys": 0,
+                        "Delayms": 0,
+                        "Description": "",
+                        "Desynth": 0,
+                        "DyeCount": 0,
+                        "EquipRestriction": 0,
+                        "EquipSlotCategory": {
+                            "value": 0
+                        },
+                        "FilterGroup": 0,
+                        "GrandCompany": {
+                            "value": 0
+                        },
+                        "Icon": {
+                            "id": 0,
+                            "path": "ui/icon/000000/000000.tex",
+                            "path_hr1": "ui/icon/000000/000000_hr1.tex"
+                        },
+                        "IsAdvancedMeldingPermitted": false,
+                        "IsCollectable": false,
+                        "IsCrestWorthy": false,
+                        "IsGlamorous": false,
+                        "IsIndisposable": false,
+                        "IsPvP": false,
+                        "IsUnique": false,
+                        "IsUntradable": false,
+                        "ItemAction": {
+                            "value": 0
+                        },
+                        "ItemGlamour": {
+                            "value": 0
+                        },
+                        "ItemRepair": {
+                            "value": 0
+                        },
+                        "ItemSearchCategory": {
+                            "value": 0
+                        },
+                        "ItemSeries": {
+                            "value": 0
+                        },
+                        "ItemSortCategory": {
+                            "value": 2
+                        },
+                        "ItemSpecialBonus": {
+                            "value": 0
+                        },
+                        "ItemSpecialBonusParam": 0,
+                        "ItemUICategory": {
+                            "value": 0
+                        },
+                        "LevelEquip": 1,
+                        "LevelItem": {
+                            "value": 0
+                        },
+                        "Lot": false,
+                        "MateriaSlotCount": 0,
+                        "MaterializeType": 0,
+                        "ModelMain": 0,
+                        "ModelSub": 0,
+                        "Name": "",
+                        "Plural": "",
+                        "PossessivePronoun": 0,
+                        "PriceLow": 0,
+                        "PriceMid": 0,
+                        "Pronoun": 0,
+                        "Rarity": 0,
+                        "RequiredPvpRank": 0,
+                        "Singular": "",
+                        "StackSize": 1,
+                        "StartsWithVowel": 0,
+                        "SubStatCategory": 0,
+                        "Unknown0": 1,
+                        "Unknown2": 0,
+                        "Unknown3": 0,
+                        "Unknown4": 0
+                    }
+                },
+                "JobIndex": 0,
+                "LimitBreak1": {
+                    "value": 0,
+                    "sheet": "Action",
+                    "row_id": 0,
+                    "fields": {
+                        "ActionCategory": {
+                            "value": 0
+                        },
+                        "ActionCombo": {
+                            "value": 0
+                        },
+                        "ActionProcStatus": {
+                            "value": 0
+                        },
+                        "ActionTimelineHit": {
+                            "value": 0
+                        },
+                        "AdditionalCooldownGroup": 0,
+                        "AffectsPosition": false,
+                        "AnimationEnd": {
+                            "value": 0
+                        },
+                        "AnimationStart": {
+                            "value": 0
+                        },
+                        "Aspect": 0,
+                        "AttackType": {
+                            "value": 0
+                        },
+                        "AutoAttackBehaviour": 0,
+                        "BehaviourType": 0,
+                        "CanTargetAlliance": false,
+                        "CanTargetAlly": false,
+                        "CanTargetHostile": false,
+                        "CanTargetOwnPet": false,
+                        "CanTargetParty": false,
+                        "CanTargetPartyPet": false,
+                        "CanTargetSelf": false,
+                        "CanUseWhileMounted": false,
+                        "Cast100ms": 0,
+                        "CastType": 0,
+                        "ClassJob": {
+                            "value": -1
+                        },
+                        "ClassJobCategory": {
+                            "value": 0
+                        },
+                        "ClassJobLevel": 0,
+                        "CooldownGroup": 0,
+                        "DeadTargetBehaviour": 0,
+                        "EffectRange": 0,
+                        "EquivalenceGroup": 0,
+                        "ExtraCastTime100ms": 0,
+                        "Icon": {
+                            "id": 405,
+                            "path": "ui/icon/000000/000405.tex",
+                            "path_hr1": "ui/icon/000000/000405_hr1.tex"
+                        },
+                        "IsPlayerAction": false,
+                        "IsPvP": false,
+                        "IsRoleAction": false,
+                        "LogActionMessage": true,
+                        "LogCastMessage": true,
+                        "LogMissMessage": false,
+                        "MaxCharges": 0,
+                        "Name": "",
+                        "NeedToFaceTarget": true,
+                        "Omen": {
+                            "value": 0
+                        },
+                        "OmenAlt": {
+                            "value": 0
+                        },
+                        "PreservesCombo": false,
+                        "PrimaryCostType": 0,
+                        "PrimaryCostValue": 0,
+                        "Range": 0,
+                        "Recast100ms": 0,
+                        "RequiresLineOfSight": true,
+                        "SecondaryCostType": 0,
+                        "SecondaryCostValue": {
+                            "value": 0
+                        },
+                        "StatusGainSelf": {
+                            "value": 0
+                        },
+                        "TargetArea": false,
+                        "Unknown1": 0,
+                        "Unknown10": false,
+                        "Unknown14": false,
+                        "Unknown15": false,
+                        "Unknown16": false,
+                        "Unknown18": false,
+                        "Unknown2": 0,
+                        "Unknown21": false,
+                        "Unknown22": false,
+                        "Unknown23": true,
+                        "Unknown25": false,
+                        "Unknown4": 0,
+                        "Unknown8": false,
+                        "Unknown_70": 0,
+                        "UnlockLink": {
+                            "value": 0
+                        },
+                        "VFX": {
+                            "value": 0
+                        },
+                        "XAxisModifier": 0
+                    }
+                },
+                "LimitBreak2": {
+                    "value": 0,
+                    "sheet": "Action",
+                    "row_id": 0,
+                    "fields": {
+                        "ActionCategory": {
+                            "value": 0
+                        },
+                        "ActionCombo": {
+                            "value": 0
+                        },
+                        "ActionProcStatus": {
+                            "value": 0
+                        },
+                        "ActionTimelineHit": {
+                            "value": 0
+                        },
+                        "AdditionalCooldownGroup": 0,
+                        "AffectsPosition": false,
+                        "AnimationEnd": {
+                            "value": 0
+                        },
+                        "AnimationStart": {
+                            "value": 0
+                        },
+                        "Aspect": 0,
+                        "AttackType": {
+                            "value": 0
+                        },
+                        "AutoAttackBehaviour": 0,
+                        "BehaviourType": 0,
+                        "CanTargetAlliance": false,
+                        "CanTargetAlly": false,
+                        "CanTargetHostile": false,
+                        "CanTargetOwnPet": false,
+                        "CanTargetParty": false,
+                        "CanTargetPartyPet": false,
+                        "CanTargetSelf": false,
+                        "CanUseWhileMounted": false,
+                        "Cast100ms": 0,
+                        "CastType": 0,
+                        "ClassJob": {
+                            "value": -1
+                        },
+                        "ClassJobCategory": {
+                            "value": 0
+                        },
+                        "ClassJobLevel": 0,
+                        "CooldownGroup": 0,
+                        "DeadTargetBehaviour": 0,
+                        "EffectRange": 0,
+                        "EquivalenceGroup": 0,
+                        "ExtraCastTime100ms": 0,
+                        "Icon": {
+                            "id": 405,
+                            "path": "ui/icon/000000/000405.tex",
+                            "path_hr1": "ui/icon/000000/000405_hr1.tex"
+                        },
+                        "IsPlayerAction": false,
+                        "IsPvP": false,
+                        "IsRoleAction": false,
+                        "LogActionMessage": true,
+                        "LogCastMessage": true,
+                        "LogMissMessage": false,
+                        "MaxCharges": 0,
+                        "Name": "",
+                        "NeedToFaceTarget": true,
+                        "Omen": {
+                            "value": 0
+                        },
+                        "OmenAlt": {
+                            "value": 0
+                        },
+                        "PreservesCombo": false,
+                        "PrimaryCostType": 0,
+                        "PrimaryCostValue": 0,
+                        "Range": 0,
+                        "Recast100ms": 0,
+                        "RequiresLineOfSight": true,
+                        "SecondaryCostType": 0,
+                        "SecondaryCostValue": {
+                            "value": 0
+                        },
+                        "StatusGainSelf": {
+                            "value": 0
+                        },
+                        "TargetArea": false,
+                        "Unknown1": 0,
+                        "Unknown10": false,
+                        "Unknown14": false,
+                        "Unknown15": false,
+                        "Unknown16": false,
+                        "Unknown18": false,
+                        "Unknown2": 0,
+                        "Unknown21": false,
+                        "Unknown22": false,
+                        "Unknown23": true,
+                        "Unknown25": false,
+                        "Unknown4": 0,
+                        "Unknown8": false,
+                        "Unknown_70": 0,
+                        "UnlockLink": {
+                            "value": 0
+                        },
+                        "VFX": {
+                            "value": 0
+                        },
+                        "XAxisModifier": 0
+                    }
+                },
+                "LimitBreak3": {
+                    "value": 0,
+                    "sheet": "Action",
+                    "row_id": 0,
+                    "fields": {
+                        "ActionCategory": {
+                            "value": 0
+                        },
+                        "ActionCombo": {
+                            "value": 0
+                        },
+                        "ActionProcStatus": {
+                            "value": 0
+                        },
+                        "ActionTimelineHit": {
+                            "value": 0
+                        },
+                        "AdditionalCooldownGroup": 0,
+                        "AffectsPosition": false,
+                        "AnimationEnd": {
+                            "value": 0
+                        },
+                        "AnimationStart": {
+                            "value": 0
+                        },
+                        "Aspect": 0,
+                        "AttackType": {
+                            "value": 0
+                        },
+                        "AutoAttackBehaviour": 0,
+                        "BehaviourType": 0,
+                        "CanTargetAlliance": false,
+                        "CanTargetAlly": false,
+                        "CanTargetHostile": false,
+                        "CanTargetOwnPet": false,
+                        "CanTargetParty": false,
+                        "CanTargetPartyPet": false,
+                        "CanTargetSelf": false,
+                        "CanUseWhileMounted": false,
+                        "Cast100ms": 0,
+                        "CastType": 0,
+                        "ClassJob": {
+                            "value": -1
+                        },
+                        "ClassJobCategory": {
+                            "value": 0
+                        },
+                        "ClassJobLevel": 0,
+                        "CooldownGroup": 0,
+                        "DeadTargetBehaviour": 0,
+                        "EffectRange": 0,
+                        "EquivalenceGroup": 0,
+                        "ExtraCastTime100ms": 0,
+                        "Icon": {
+                            "id": 405,
+                            "path": "ui/icon/000000/000405.tex",
+                            "path_hr1": "ui/icon/000000/000405_hr1.tex"
+                        },
+                        "IsPlayerAction": false,
+                        "IsPvP": false,
+                        "IsRoleAction": false,
+                        "LogActionMessage": true,
+                        "LogCastMessage": true,
+                        "LogMissMessage": false,
+                        "MaxCharges": 0,
+                        "Name": "",
+                        "NeedToFaceTarget": true,
+                        "Omen": {
+                            "value": 0
+                        },
+                        "OmenAlt": {
+                            "value": 0
+                        },
+                        "PreservesCombo": false,
+                        "PrimaryCostType": 0,
+                        "PrimaryCostValue": 0,
+                        "Range": 0,
+                        "Recast100ms": 0,
+                        "RequiresLineOfSight": true,
+                        "SecondaryCostType": 0,
+                        "SecondaryCostValue": {
+                            "value": 0
+                        },
+                        "StatusGainSelf": {
+                            "value": 0
+                        },
+                        "TargetArea": false,
+                        "Unknown1": 0,
+                        "Unknown10": false,
+                        "Unknown14": false,
+                        "Unknown15": false,
+                        "Unknown16": false,
+                        "Unknown18": false,
+                        "Unknown2": 0,
+                        "Unknown21": false,
+                        "Unknown22": false,
+                        "Unknown23": true,
+                        "Unknown25": false,
+                        "Unknown4": 0,
+                        "Unknown8": false,
+                        "Unknown_70": 0,
+                        "UnlockLink": {
+                            "value": 0
+                        },
+                        "VFX": {
+                            "value": 0
+                        },
+                        "XAxisModifier": 0
+                    }
+                },
+                "ModifierDexterity": 90,
+                "ModifierHitPoints": 100,
+                "ModifierIntelligence": 90,
+                "ModifierManaPoints": 100,
+                "ModifierMind": 100,
+                "ModifierPiety": 100,
+                "ModifierStrength": 105,
+                "ModifierVitality": 90,
+                "MonsterNote": {
+                    "value": 127
+                },
+                "Name": "blacksmith",
+                "NameEnglish": "Blacksmith",
+                "PartyBonus": 7,
+                "Prerequisite": {
+                    "value": 0
+                },
+                "PrimaryStat": 0,
+                "PvPActionSortRow": 0,
+                "RelicQuest": {
+                    "value": 0
+                },
+                "Role": 0,
+                "StartingLevel": 1,
+                "StartingTown": {
+                    "value": 0,
+                    "sheet": "Town",
+                    "row_id": 0,
+                    "fields": {
+                        "Icon": {
+                            "id": 0,
+                            "path": "ui/icon/000000/000000.tex",
+                            "path_hr1": "ui/icon/000000/000000_hr1.tex"
+                        },
+                        "Name": "Nowheresville"
+                    }
+                },
+                "UIPriority": 102,
+                "Unknown0": "鍛",
+                "Unknown1": 0,
+                "Unknown10": 0,
+                "Unknown11": 0,
+                "Unknown2": 100,
+                "Unknown3": 100,
+                "Unknown4": 100,
+                "Unknown5": 100,
+                "Unknown6": 100,
+                "Unknown7": 100,
+                "Unknown8": 0,
+                "Unknown9": 0,
+                "Unknown_70_1": 0,
+                "Unknown_70_2": 0,
+                "UnlockQuest": {
+                    "value": 0
+                }
+            }
+        },
+        "ClassJobUse": {
+            "value": 2,
+            "sheet": "ClassJob",
+            "row_id": 2,
+            "fields": {
+                "Abbreviation": "PGL",
+                "BattleClassIndex": 1,
+                "CanQueueForDuty": true,
+                "ClassJobCategory": {
+                    "value": 30,
+                    "sheet": "ClassJobCategory",
+                    "row_id": 30,
+                    "fields": {
+                        "ACN": false,
+                        "ADV": false,
+                        "ALC": false,
+                        "ARC": true,
+                        "ARM": false,
+                        "AST": false,
+                        "BLM": false,
+                        "BLU": false,
+                        "BRD": true,
+                        "BSM": false,
+                        "BTN": false,
+                        "CNJ": false,
+                        "CRP": false,
+                        "CUL": false,
+                        "DNC": true,
+                        "DRG": true,
+                        "DRK": true,
+                        "FSH": false,
+                        "GLA": true,
+                        "GNB": true,
+                        "GSM": false,
+                        "LNC": true,
+                        "LTW": false,
+                        "MCH": true,
+                        "MIN": false,
+                        "MNK": true,
+                        "MRD": true,
+                        "NIN": true,
+                        "Name": "Disciple of War",
+                        "PCT": false,
+                        "PGL": true,
+                        "PLD": true,
+                        "RDM": false,
+                        "ROG": true,
+                        "RPR": true,
+                        "SAM": true,
+                        "SCH": false,
+                        "SGE": false,
+                        "SMN": false,
+                        "THM": false,
+                        "VPR": true,
+                        "WAR": true,
+                        "WHM": false,
+                        "WVR": false
+                    }
+                },
+                "ClassJobParent": {
+                    "value": 2,
+                    "sheet": "ClassJob",
+                    "row_id": 2,
+                    "fields": {
+                        "Abbreviation": "PGL",
+                        "BattleClassIndex": 1,
+                        "CanQueueForDuty": true,
+                        "ClassJobCategory": {
+                            "value": 30
+                        },
+                        "ClassJobParent": {
+                            "value": 2
+                        },
+                        "DohDolJobIndex": -1,
+                        "ExpArrayIndex": 0,
+                        "IsLimitedJob": false,
+                        "ItemSoulCrystal": {
+                            "value": 0
+                        },
+                        "ItemStartingWeapon": {
+                            "value": 1680
+                        },
+                        "JobIndex": 0,
+                        "LimitBreak1": {
+                            "value": 200
+                        },
+                        "LimitBreak2": {
+                            "value": 201
+                        },
+                        "LimitBreak3": {
+                            "value": 202
+                        },
+                        "ModifierDexterity": 100,
+                        "ModifierHitPoints": 105,
+                        "ModifierIntelligence": 45,
+                        "ModifierManaPoints": 100,
+                        "ModifierMind": 85,
+                        "ModifierPiety": 100,
+                        "ModifierStrength": 100,
+                        "ModifierVitality": 95,
+                        "MonsterNote": {
+                            "value": 1
+                        },
+                        "Name": "pugilist",
+                        "NameEnglish": "Pugilist",
+                        "PartyBonus": 3,
+                        "Prerequisite": {
+                            "value": 0
+                        },
+                        "PrimaryStat": 1,
+                        "PvPActionSortRow": 0,
+                        "RelicQuest": {
+                            "value": 0
+                        },
+                        "Role": 2,
+                        "StartingLevel": 1,
+                        "StartingTown": {
+                            "value": 3
+                        },
+                        "UIPriority": 22,
+                        "Unknown0": "格",
+                        "Unknown1": 0,
+                        "Unknown10": 0,
+                        "Unknown11": 0,
+                        "Unknown2": 100,
+                        "Unknown3": 100,
+                        "Unknown4": 100,
+                        "Unknown5": 100,
+                        "Unknown6": 100,
+                        "Unknown7": 100,
+                        "Unknown8": 2,
+                        "Unknown9": 0,
+                        "Unknown_70_1": 2,
+                        "Unknown_70_2": 0,
+                        "UnlockQuest": {
+                            "value": 0
+                        }
+                    }
+                },
+                "DohDolJobIndex": -1,
+                "ExpArrayIndex": 0,
+                "IsLimitedJob": false,
+                "ItemSoulCrystal": {
+                    "value": 0,
+                    "sheet": "Item",
+                    "row_id": 0,
+                    "fields": {
+                        "AdditionalData": {
+                            "value": 0
+                        },
+                        "Adjective": 0,
+                        "AetherialReduce": 0,
+                        "AlwaysCollectable": false,
+                        "Article": 0,
+                        "BaseParam": [
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            }
+                        ],
+                        "BaseParamModifier": 0,
+                        "BaseParamSpecial": [
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            }
+                        ],
+                        "BaseParamValue": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "BaseParamValueSpecial": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "Block": 0,
+                        "BlockRate": 0,
+                        "CanBeHq": false,
+                        "CastTimeSeconds": 2,
+                        "ClassJobCategory": {
+                            "value": 0
+                        },
+                        "ClassJobRepair": {
+                            "value": 0
+                        },
+                        "ClassJobUse": {
+                            "value": 0
+                        },
+                        "Cooldowns": 0,
+                        "DamageMag": 0,
+                        "DamagePhys": 0,
+                        "DefenseMag": 0,
+                        "DefensePhys": 0,
+                        "Delayms": 0,
+                        "Description": "",
+                        "Desynth": 0,
+                        "DyeCount": 0,
+                        "EquipRestriction": 0,
+                        "EquipSlotCategory": {
+                            "value": 0
+                        },
+                        "FilterGroup": 0,
+                        "GrandCompany": {
+                            "value": 0
+                        },
+                        "Icon": {
+                            "id": 0,
+                            "path": "ui/icon/000000/000000.tex",
+                            "path_hr1": "ui/icon/000000/000000_hr1.tex"
+                        },
+                        "IsAdvancedMeldingPermitted": false,
+                        "IsCollectable": false,
+                        "IsCrestWorthy": false,
+                        "IsGlamorous": false,
+                        "IsIndisposable": false,
+                        "IsPvP": false,
+                        "IsUnique": false,
+                        "IsUntradable": false,
+                        "ItemAction": {
+                            "value": 0
+                        },
+                        "ItemGlamour": {
+                            "value": 0
+                        },
+                        "ItemRepair": {
+                            "value": 0
+                        },
+                        "ItemSearchCategory": {
+                            "value": 0
+                        },
+                        "ItemSeries": {
+                            "value": 0
+                        },
+                        "ItemSortCategory": {
+                            "value": 2
+                        },
+                        "ItemSpecialBonus": {
+                            "value": 0
+                        },
+                        "ItemSpecialBonusParam": 0,
+                        "ItemUICategory": {
+                            "value": 0
+                        },
+                        "LevelEquip": 1,
+                        "LevelItem": {
+                            "value": 0
+                        },
+                        "Lot": false,
+                        "MateriaSlotCount": 0,
+                        "MaterializeType": 0,
+                        "ModelMain": 0,
+                        "ModelSub": 0,
+                        "Name": "",
+                        "Plural": "",
+                        "PossessivePronoun": 0,
+                        "PriceLow": 0,
+                        "PriceMid": 0,
+                        "Pronoun": 0,
+                        "Rarity": 0,
+                        "RequiredPvpRank": 0,
+                        "Singular": "",
+                        "StackSize": 1,
+                        "StartsWithVowel": 0,
+                        "SubStatCategory": 0,
+                        "Unknown0": 1,
+                        "Unknown2": 0,
+                        "Unknown3": 0,
+                        "Unknown4": 0
+                    }
+                },
+                "ItemStartingWeapon": {
+                    "value": 1680,
+                    "sheet": "Item",
+                    "row_id": 1680,
+                    "fields": {
+                        "AdditionalData": {
+                            "value": 0
+                        },
+                        "Adjective": 0,
+                        "AetherialReduce": 0,
+                        "AlwaysCollectable": false,
+                        "Article": 0,
+                        "BaseParam": [
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            }
+                        ],
+                        "BaseParamModifier": 3,
+                        "BaseParamSpecial": [
+                            {
+                                "value": 12
+                            },
+                            {
+                                "value": 13
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            }
+                        ],
+                        "BaseParamValue": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "BaseParamValueSpecial": [
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "Block": 0,
+                        "BlockRate": 0,
+                        "CanBeHq": false,
+                        "CastTimeSeconds": 2,
+                        "ClassJobCategory": {
+                            "value": 41
+                        },
+                        "ClassJobRepair": {
+                            "value": 11
+                        },
+                        "ClassJobUse": {
+                            "value": 2
+                        },
+                        "Cooldowns": 0,
+                        "DamageMag": 5,
+                        "DamagePhys": 8,
+                        "DefenseMag": 0,
+                        "DefensePhys": 0,
+                        "Delayms": 2320,
+                        "Description": "",
+                        "Desynth": 6101,
+                        "DyeCount": 0,
+                        "EquipRestriction": 1,
+                        "EquipSlotCategory": {
+                            "value": 13
+                        },
+                        "FilterGroup": 1,
+                        "GrandCompany": {
+                            "value": 0
+                        },
+                        "Icon": {
+                            "id": 31004,
+                            "path": "ui/icon/031000/031004.tex",
+                            "path_hr1": "ui/icon/031000/031004_hr1.tex"
+                        },
+                        "IsAdvancedMeldingPermitted": false,
+                        "IsCollectable": false,
+                        "IsCrestWorthy": false,
+                        "IsGlamorous": true,
+                        "IsIndisposable": false,
+                        "IsPvP": false,
+                        "IsUnique": false,
+                        "IsUntradable": false,
+                        "ItemAction": {
+                            "value": 0
+                        },
+                        "ItemGlamour": {
+                            "value": 21800
+                        },
+                        "ItemRepair": {
+                            "value": 1
+                        },
+                        "ItemSearchCategory": {
+                            "value": 9
+                        },
+                        "ItemSeries": {
+                            "value": 0
+                        },
+                        "ItemSortCategory": {
+                            "value": 5
+                        },
+                        "ItemSpecialBonus": {
+                            "value": 1
+                        },
+                        "ItemSpecialBonusParam": 0,
+                        "ItemUICategory": {
+                            "value": 1
+                        },
+                        "LevelEquip": 1,
+                        "LevelItem": {
+                            "value": 1
+                        },
+                        "Lot": true,
+                        "MateriaSlotCount": 0,
+                        "MaterializeType": 5,
+                        "ModelMain": 4295557421,
+                        "ModelSub": 4295557471,
+                        "Name": "Weathered Hora",
+                        "Plural": "pairs of weathered hora",
+                        "PossessivePronoun": 0,
+                        "PriceLow": 2,
+                        "PriceMid": 89,
+                        "Pronoun": 0,
+                        "Rarity": 1,
+                        "RequiredPvpRank": 0,
+                        "Singular": "pair of weathered hora",
+                        "StackSize": 1,
+                        "StartsWithVowel": 0,
+                        "SubStatCategory": 0,
+                        "Unknown0": 1,
+                        "Unknown2": 3,
+                        "Unknown3": 3,
+                        "Unknown4": 16320
+                    }
+                },
+                "JobIndex": 0,
+                "LimitBreak1": {
+                    "value": 200,
+                    "sheet": "Action",
+                    "row_id": 200,
+                    "fields": {
+                        "ActionCategory": {
+                            "value": 9
+                        },
+                        "ActionCombo": {
+                            "value": 0
+                        },
+                        "ActionProcStatus": {
+                            "value": 0
+                        },
+                        "ActionTimelineHit": {
+                            "value": 1875
+                        },
+                        "AdditionalCooldownGroup": 0,
+                        "AffectsPosition": false,
+                        "AnimationEnd": {
+                            "value": 2243
+                        },
+                        "AnimationStart": {
+                            "value": 50
+                        },
+                        "Aspect": 7,
+                        "AttackType": {
+                            "value": 8
+                        },
+                        "AutoAttackBehaviour": 0,
+                        "BehaviourType": 0,
+                        "CanTargetAlliance": false,
+                        "CanTargetAlly": false,
+                        "CanTargetHostile": true,
+                        "CanTargetOwnPet": false,
+                        "CanTargetParty": false,
+                        "CanTargetPartyPet": false,
+                        "CanTargetSelf": false,
+                        "CanUseWhileMounted": false,
+                        "Cast100ms": 20,
+                        "CastType": 1,
+                        "ClassJob": {
+                            "value": 0
+                        },
+                        "ClassJobCategory": {
+                            "value": 1
+                        },
+                        "ClassJobLevel": 0,
+                        "CooldownGroup": 0,
+                        "DeadTargetBehaviour": 0,
+                        "EffectRange": 0,
+                        "EquivalenceGroup": 0,
+                        "ExtraCastTime100ms": 0,
+                        "Icon": {
+                            "id": 103,
+                            "path": "ui/icon/000000/000103.tex",
+                            "path_hr1": "ui/icon/000000/000103_hr1.tex"
+                        },
+                        "IsPlayerAction": false,
+                        "IsPvP": false,
+                        "IsRoleAction": false,
+                        "LogActionMessage": true,
+                        "LogCastMessage": true,
+                        "LogMissMessage": true,
+                        "MaxCharges": 0,
+                        "Name": "Braver",
+                        "NeedToFaceTarget": true,
+                        "Omen": {
+                            "value": 0
+                        },
+                        "OmenAlt": {
+                            "value": 0
+                        },
+                        "PreservesCombo": true,
+                        "PrimaryCostType": 11,
+                        "PrimaryCostValue": 0,
+                        "Range": 8,
+                        "Recast100ms": 0,
+                        "RequiresLineOfSight": true,
+                        "SecondaryCostType": 0,
+                        "SecondaryCostValue": {
+                            "value": 0
+                        },
+                        "StatusGainSelf": {
+                            "value": 0
+                        },
+                        "TargetArea": false,
+                        "Unknown1": 0,
+                        "Unknown10": false,
+                        "Unknown14": true,
+                        "Unknown15": false,
+                        "Unknown16": false,
+                        "Unknown18": false,
+                        "Unknown2": 0,
+                        "Unknown21": true,
+                        "Unknown22": false,
+                        "Unknown23": true,
+                        "Unknown25": false,
+                        "Unknown4": 1,
+                        "Unknown8": false,
+                        "Unknown_70": 0,
+                        "UnlockLink": {
+                            "value": 0
+                        },
+                        "VFX": {
+                            "value": 20
+                        },
+                        "XAxisModifier": 0
+                    }
+                },
+                "LimitBreak2": {
+                    "value": 201,
+                    "sheet": "Action",
+                    "row_id": 201,
+                    "fields": {
+                        "ActionCategory": {
+                            "value": 9
+                        },
+                        "ActionCombo": {
+                            "value": 0
+                        },
+                        "ActionProcStatus": {
+                            "value": 0
+                        },
+                        "ActionTimelineHit": {
+                            "value": 1875
+                        },
+                        "AdditionalCooldownGroup": 0,
+                        "AffectsPosition": false,
+                        "AnimationEnd": {
+                            "value": 2244
+                        },
+                        "AnimationStart": {
+                            "value": 50
+                        },
+                        "Aspect": 7,
+                        "AttackType": {
+                            "value": 8
+                        },
+                        "AutoAttackBehaviour": 0,
+                        "BehaviourType": 0,
+                        "CanTargetAlliance": false,
+                        "CanTargetAlly": false,
+                        "CanTargetHostile": true,
+                        "CanTargetOwnPet": false,
+                        "CanTargetParty": false,
+                        "CanTargetPartyPet": false,
+                        "CanTargetSelf": false,
+                        "CanUseWhileMounted": false,
+                        "Cast100ms": 30,
+                        "CastType": 1,
+                        "ClassJob": {
+                            "value": 0
+                        },
+                        "ClassJobCategory": {
+                            "value": 1
+                        },
+                        "ClassJobLevel": 0,
+                        "CooldownGroup": 0,
+                        "DeadTargetBehaviour": 0,
+                        "EffectRange": 0,
+                        "EquivalenceGroup": 0,
+                        "ExtraCastTime100ms": 0,
+                        "Icon": {
+                            "id": 103,
+                            "path": "ui/icon/000000/000103.tex",
+                            "path_hr1": "ui/icon/000000/000103_hr1.tex"
+                        },
+                        "IsPlayerAction": false,
+                        "IsPvP": false,
+                        "IsRoleAction": false,
+                        "LogActionMessage": true,
+                        "LogCastMessage": true,
+                        "LogMissMessage": true,
+                        "MaxCharges": 0,
+                        "Name": "Bladedance",
+                        "NeedToFaceTarget": true,
+                        "Omen": {
+                            "value": 0
+                        },
+                        "OmenAlt": {
+                            "value": 0
+                        },
+                        "PreservesCombo": true,
+                        "PrimaryCostType": 11,
+                        "PrimaryCostValue": 0,
+                        "Range": 8,
+                        "Recast100ms": 0,
+                        "RequiresLineOfSight": true,
+                        "SecondaryCostType": 0,
+                        "SecondaryCostValue": {
+                            "value": 0
+                        },
+                        "StatusGainSelf": {
+                            "value": 0
+                        },
+                        "TargetArea": false,
+                        "Unknown1": 0,
+                        "Unknown10": false,
+                        "Unknown14": true,
+                        "Unknown15": false,
+                        "Unknown16": false,
+                        "Unknown18": false,
+                        "Unknown2": 0,
+                        "Unknown21": true,
+                        "Unknown22": false,
+                        "Unknown23": true,
+                        "Unknown25": false,
+                        "Unknown4": 1,
+                        "Unknown8": false,
+                        "Unknown_70": 0,
+                        "UnlockLink": {
+                            "value": 0
+                        },
+                        "VFX": {
+                            "value": 20
+                        },
+                        "XAxisModifier": 0
+                    }
+                },
+                "LimitBreak3": {
+                    "value": 202,
+                    "sheet": "Action",
+                    "row_id": 202,
+                    "fields": {
+                        "ActionCategory": {
+                            "value": 9
+                        },
+                        "ActionCombo": {
+                            "value": 0
+                        },
+                        "ActionProcStatus": {
+                            "value": 0
+                        },
+                        "ActionTimelineHit": {
+                            "value": 1875
+                        },
+                        "AdditionalCooldownGroup": 0,
+                        "AffectsPosition": false,
+                        "AnimationEnd": {
+                            "value": 2245
+                        },
+                        "AnimationStart": {
+                            "value": 51
+                        },
+                        "Aspect": 7,
+                        "AttackType": {
+                            "value": 8
+                        },
+                        "AutoAttackBehaviour": 0,
+                        "BehaviourType": 0,
+                        "CanTargetAlliance": false,
+                        "CanTargetAlly": false,
+                        "CanTargetHostile": true,
+                        "CanTargetOwnPet": false,
+                        "CanTargetParty": false,
+                        "CanTargetPartyPet": false,
+                        "CanTargetSelf": false,
+                        "CanUseWhileMounted": false,
+                        "Cast100ms": 45,
+                        "CastType": 1,
+                        "ClassJob": {
+                            "value": 0
+                        },
+                        "ClassJobCategory": {
+                            "value": 1
+                        },
+                        "ClassJobLevel": 0,
+                        "CooldownGroup": 0,
+                        "DeadTargetBehaviour": 0,
+                        "EffectRange": 0,
+                        "EquivalenceGroup": 0,
+                        "ExtraCastTime100ms": 0,
+                        "Icon": {
+                            "id": 103,
+                            "path": "ui/icon/000000/000103.tex",
+                            "path_hr1": "ui/icon/000000/000103_hr1.tex"
+                        },
+                        "IsPlayerAction": false,
+                        "IsPvP": false,
+                        "IsRoleAction": false,
+                        "LogActionMessage": true,
+                        "LogCastMessage": true,
+                        "LogMissMessage": true,
+                        "MaxCharges": 0,
+                        "Name": "Final Heaven",
+                        "NeedToFaceTarget": true,
+                        "Omen": {
+                            "value": 0
+                        },
+                        "OmenAlt": {
+                            "value": 0
+                        },
+                        "PreservesCombo": true,
+                        "PrimaryCostType": 11,
+                        "PrimaryCostValue": 0,
+                        "Range": 8,
+                        "Recast100ms": 0,
+                        "RequiresLineOfSight": true,
+                        "SecondaryCostType": 0,
+                        "SecondaryCostValue": {
+                            "value": 0
+                        },
+                        "StatusGainSelf": {
+                            "value": 0
+                        },
+                        "TargetArea": false,
+                        "Unknown1": 0,
+                        "Unknown10": false,
+                        "Unknown14": true,
+                        "Unknown15": false,
+                        "Unknown16": false,
+                        "Unknown18": false,
+                        "Unknown2": 0,
+                        "Unknown21": true,
+                        "Unknown22": false,
+                        "Unknown23": true,
+                        "Unknown25": false,
+                        "Unknown4": 1,
+                        "Unknown8": false,
+                        "Unknown_70": 0,
+                        "UnlockLink": {
+                            "value": 0
+                        },
+                        "VFX": {
+                            "value": 21
+                        },
+                        "XAxisModifier": 0
+                    }
+                },
+                "ModifierDexterity": 100,
+                "ModifierHitPoints": 105,
+                "ModifierIntelligence": 45,
+                "ModifierManaPoints": 100,
+                "ModifierMind": 85,
+                "ModifierPiety": 100,
+                "ModifierStrength": 100,
+                "ModifierVitality": 95,
+                "MonsterNote": {
+                    "value": 1
+                },
+                "Name": "pugilist",
+                "NameEnglish": "Pugilist",
+                "PartyBonus": 3,
+                "Prerequisite": {
+                    "value": 0
+                },
+                "PrimaryStat": 1,
+                "PvPActionSortRow": 0,
+                "RelicQuest": {
+                    "value": 0
+                },
+                "Role": 2,
+                "StartingLevel": 1,
+                "StartingTown": {
+                    "value": 3,
+                    "sheet": "Town",
+                    "row_id": 3,
+                    "fields": {
+                        "Icon": {
+                            "id": 60883,
+                            "path": "ui/icon/060000/060883.tex",
+                            "path_hr1": "ui/icon/060000/060883_hr1.tex"
+                        },
+                        "Name": "Ul'dah"
+                    }
+                },
+                "UIPriority": 22,
+                "Unknown0": "格",
+                "Unknown1": 0,
+                "Unknown10": 0,
+                "Unknown11": 0,
+                "Unknown2": 100,
+                "Unknown3": 100,
+                "Unknown4": 100,
+                "Unknown5": 100,
+                "Unknown6": 100,
+                "Unknown7": 100,
+                "Unknown8": 2,
+                "Unknown9": 0,
+                "Unknown_70_1": 2,
+                "Unknown_70_2": 0,
+                "UnlockQuest": {
+                    "value": 0
+                }
+            }
+        },
+        "Cooldowns": 0,
+        "DamageMag": 52,
+        "DamagePhys": 104,
+        "DefenseMag": 0,
+        "DefensePhys": 0,
+        "Delayms": 2560,
+        "Description": "",
+        "Desynth": 6382,
+        "DyeCount": 0,
+        "EquipRestriction": 1,
+        "EquipSlotCategory": {
+            "value": 13,
+            "sheet": "EquipSlotCategory",
+            "row_id": 13,
+            "fields": {
+                "Body": 0,
+                "Ears": 0,
+                "Feet": 0,
+                "FingerL": 0,
+                "FingerR": 0,
+                "Gloves": 0,
+                "Head": 0,
+                "Legs": 0,
+                "MainHand": 1,
+                "Neck": 0,
+                "OffHand": -1,
+                "SoulCrystal": 0,
+                "Waist": 0,
+                "Wrists": 0
+            }
+        },
+        "FilterGroup": 1,
+        "GrandCompany": {
+            "value": 0,
+            "sheet": "GrandCompany",
+            "row_id": 0,
+            "fields": {
+                "Name": "None",
+                "Unknown0": "",
+                "Unknown1": "",
+                "Unknown2": 0,
+                "Unknown3": 0,
+                "Unknown4": 0,
+                "Unknown5": 0,
+                "Unknown6": 0,
+                "Unknown7": 0,
+                "Unknown8": 127
+            }
+        },
+        "Icon": {
+            "id": 30806,
+            "path": "ui/icon/030000/030806.tex",
+            "path_hr1": "ui/icon/030000/030806_hr1.tex"
+        },
+        "IsAdvancedMeldingPermitted": false,
+        "IsCollectable": false,
+        "IsCrestWorthy": false,
+        "IsGlamorous": true,
+        "IsIndisposable": false,
+        "IsPvP": false,
+        "IsUnique": true,
+        "IsUntradable": true,
+        "ItemAction": {
+            "value": 0,
+            "sheet": "ItemAction",
+            "row_id": 0,
+            "fields": {
+                "CondBattle": true,
+                "CondLv": 0,
+                "CondPVP": true,
+                "CondPVPOnly": false,
+                "Data": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "DataHQ": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "Type": 0
+            }
+        },
+        "ItemGlamour": {
+            "value": 21800,
+            "sheet": "Item",
+            "row_id": 21800,
+            "fields": {
+                "AdditionalData": {
+                    "value": 0
+                },
+                "Adjective": 0,
+                "AetherialReduce": 0,
+                "AlwaysCollectable": false,
+                "Article": 0,
+                "BaseParam": [
+                    {
+                        "value": 0,
+                        "sheet": "BaseParam",
+                        "row_id": 0,
+                        "fields": {
+                            "BraceletPercent": 0,
+                            "ChestHeadLegsFeetPercent": 0,
+                            "ChestHeadPercent": 0,
+                            "ChestLegsFeetPercent": 0,
+                            "ChestLegsGlovesPercent": 0,
+                            "ChestPercent": 0,
+                            "Description": "",
+                            "EarringPercent": 0,
+                            "FeetPercent": 0,
+                            "HandsPercent": 0,
+                            "HeadChestHandsLegsFeetPercent": 0,
+                            "HeadPercent": 0,
+                            "LegsFeetPercent": 0,
+                            "LegsPercent": 0,
+                            "MeldParam": [
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100
+                            ],
+                            "Name": "",
+                            "NecklacePercent": 0,
+                            "OffHandPercent": 0,
+                            "OneHandWeaponPercent": 0,
+                            "OrderPriority": 0,
+                            "PacketIndex": -1,
+                            "RingPercent": 0,
+                            "TwoHandWeaponPercent": 0,
+                            "UnderArmorPercent": 0,
+                            "Unknown0": 0,
+                            "Unknown1": 0,
+                            "Unknown2": false,
+                            "WaistPercent": 0
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "sheet": "BaseParam",
+                        "row_id": 0,
+                        "fields": {
+                            "BraceletPercent": 0,
+                            "ChestHeadLegsFeetPercent": 0,
+                            "ChestHeadPercent": 0,
+                            "ChestLegsFeetPercent": 0,
+                            "ChestLegsGlovesPercent": 0,
+                            "ChestPercent": 0,
+                            "Description": "",
+                            "EarringPercent": 0,
+                            "FeetPercent": 0,
+                            "HandsPercent": 0,
+                            "HeadChestHandsLegsFeetPercent": 0,
+                            "HeadPercent": 0,
+                            "LegsFeetPercent": 0,
+                            "LegsPercent": 0,
+                            "MeldParam": [
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100
+                            ],
+                            "Name": "",
+                            "NecklacePercent": 0,
+                            "OffHandPercent": 0,
+                            "OneHandWeaponPercent": 0,
+                            "OrderPriority": 0,
+                            "PacketIndex": -1,
+                            "RingPercent": 0,
+                            "TwoHandWeaponPercent": 0,
+                            "UnderArmorPercent": 0,
+                            "Unknown0": 0,
+                            "Unknown1": 0,
+                            "Unknown2": false,
+                            "WaistPercent": 0
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "sheet": "BaseParam",
+                        "row_id": 0,
+                        "fields": {
+                            "BraceletPercent": 0,
+                            "ChestHeadLegsFeetPercent": 0,
+                            "ChestHeadPercent": 0,
+                            "ChestLegsFeetPercent": 0,
+                            "ChestLegsGlovesPercent": 0,
+                            "ChestPercent": 0,
+                            "Description": "",
+                            "EarringPercent": 0,
+                            "FeetPercent": 0,
+                            "HandsPercent": 0,
+                            "HeadChestHandsLegsFeetPercent": 0,
+                            "HeadPercent": 0,
+                            "LegsFeetPercent": 0,
+                            "LegsPercent": 0,
+                            "MeldParam": [
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100
+                            ],
+                            "Name": "",
+                            "NecklacePercent": 0,
+                            "OffHandPercent": 0,
+                            "OneHandWeaponPercent": 0,
+                            "OrderPriority": 0,
+                            "PacketIndex": -1,
+                            "RingPercent": 0,
+                            "TwoHandWeaponPercent": 0,
+                            "UnderArmorPercent": 0,
+                            "Unknown0": 0,
+                            "Unknown1": 0,
+                            "Unknown2": false,
+                            "WaistPercent": 0
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "sheet": "BaseParam",
+                        "row_id": 0,
+                        "fields": {
+                            "BraceletPercent": 0,
+                            "ChestHeadLegsFeetPercent": 0,
+                            "ChestHeadPercent": 0,
+                            "ChestLegsFeetPercent": 0,
+                            "ChestLegsGlovesPercent": 0,
+                            "ChestPercent": 0,
+                            "Description": "",
+                            "EarringPercent": 0,
+                            "FeetPercent": 0,
+                            "HandsPercent": 0,
+                            "HeadChestHandsLegsFeetPercent": 0,
+                            "HeadPercent": 0,
+                            "LegsFeetPercent": 0,
+                            "LegsPercent": 0,
+                            "MeldParam": [
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100
+                            ],
+                            "Name": "",
+                            "NecklacePercent": 0,
+                            "OffHandPercent": 0,
+                            "OneHandWeaponPercent": 0,
+                            "OrderPriority": 0,
+                            "PacketIndex": -1,
+                            "RingPercent": 0,
+                            "TwoHandWeaponPercent": 0,
+                            "UnderArmorPercent": 0,
+                            "Unknown0": 0,
+                            "Unknown1": 0,
+                            "Unknown2": false,
+                            "WaistPercent": 0
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "sheet": "BaseParam",
+                        "row_id": 0,
+                        "fields": {
+                            "BraceletPercent": 0,
+                            "ChestHeadLegsFeetPercent": 0,
+                            "ChestHeadPercent": 0,
+                            "ChestLegsFeetPercent": 0,
+                            "ChestLegsGlovesPercent": 0,
+                            "ChestPercent": 0,
+                            "Description": "",
+                            "EarringPercent": 0,
+                            "FeetPercent": 0,
+                            "HandsPercent": 0,
+                            "HeadChestHandsLegsFeetPercent": 0,
+                            "HeadPercent": 0,
+                            "LegsFeetPercent": 0,
+                            "LegsPercent": 0,
+                            "MeldParam": [
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100
+                            ],
+                            "Name": "",
+                            "NecklacePercent": 0,
+                            "OffHandPercent": 0,
+                            "OneHandWeaponPercent": 0,
+                            "OrderPriority": 0,
+                            "PacketIndex": -1,
+                            "RingPercent": 0,
+                            "TwoHandWeaponPercent": 0,
+                            "UnderArmorPercent": 0,
+                            "Unknown0": 0,
+                            "Unknown1": 0,
+                            "Unknown2": false,
+                            "WaistPercent": 0
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "sheet": "BaseParam",
+                        "row_id": 0,
+                        "fields": {
+                            "BraceletPercent": 0,
+                            "ChestHeadLegsFeetPercent": 0,
+                            "ChestHeadPercent": 0,
+                            "ChestLegsFeetPercent": 0,
+                            "ChestLegsGlovesPercent": 0,
+                            "ChestPercent": 0,
+                            "Description": "",
+                            "EarringPercent": 0,
+                            "FeetPercent": 0,
+                            "HandsPercent": 0,
+                            "HeadChestHandsLegsFeetPercent": 0,
+                            "HeadPercent": 0,
+                            "LegsFeetPercent": 0,
+                            "LegsPercent": 0,
+                            "MeldParam": [
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100
+                            ],
+                            "Name": "",
+                            "NecklacePercent": 0,
+                            "OffHandPercent": 0,
+                            "OneHandWeaponPercent": 0,
+                            "OrderPriority": 0,
+                            "PacketIndex": -1,
+                            "RingPercent": 0,
+                            "TwoHandWeaponPercent": 0,
+                            "UnderArmorPercent": 0,
+                            "Unknown0": 0,
+                            "Unknown1": 0,
+                            "Unknown2": false,
+                            "WaistPercent": 0
+                        }
+                    }
+                ],
+                "BaseParamModifier": 0,
+                "BaseParamSpecial": [
+                    {
+                        "value": 0,
+                        "sheet": "BaseParam",
+                        "row_id": 0,
+                        "fields": {
+                            "BraceletPercent": 0,
+                            "ChestHeadLegsFeetPercent": 0,
+                            "ChestHeadPercent": 0,
+                            "ChestLegsFeetPercent": 0,
+                            "ChestLegsGlovesPercent": 0,
+                            "ChestPercent": 0,
+                            "Description": "",
+                            "EarringPercent": 0,
+                            "FeetPercent": 0,
+                            "HandsPercent": 0,
+                            "HeadChestHandsLegsFeetPercent": 0,
+                            "HeadPercent": 0,
+                            "LegsFeetPercent": 0,
+                            "LegsPercent": 0,
+                            "MeldParam": [
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100
+                            ],
+                            "Name": "",
+                            "NecklacePercent": 0,
+                            "OffHandPercent": 0,
+                            "OneHandWeaponPercent": 0,
+                            "OrderPriority": 0,
+                            "PacketIndex": -1,
+                            "RingPercent": 0,
+                            "TwoHandWeaponPercent": 0,
+                            "UnderArmorPercent": 0,
+                            "Unknown0": 0,
+                            "Unknown1": 0,
+                            "Unknown2": false,
+                            "WaistPercent": 0
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "sheet": "BaseParam",
+                        "row_id": 0,
+                        "fields": {
+                            "BraceletPercent": 0,
+                            "ChestHeadLegsFeetPercent": 0,
+                            "ChestHeadPercent": 0,
+                            "ChestLegsFeetPercent": 0,
+                            "ChestLegsGlovesPercent": 0,
+                            "ChestPercent": 0,
+                            "Description": "",
+                            "EarringPercent": 0,
+                            "FeetPercent": 0,
+                            "HandsPercent": 0,
+                            "HeadChestHandsLegsFeetPercent": 0,
+                            "HeadPercent": 0,
+                            "LegsFeetPercent": 0,
+                            "LegsPercent": 0,
+                            "MeldParam": [
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100
+                            ],
+                            "Name": "",
+                            "NecklacePercent": 0,
+                            "OffHandPercent": 0,
+                            "OneHandWeaponPercent": 0,
+                            "OrderPriority": 0,
+                            "PacketIndex": -1,
+                            "RingPercent": 0,
+                            "TwoHandWeaponPercent": 0,
+                            "UnderArmorPercent": 0,
+                            "Unknown0": 0,
+                            "Unknown1": 0,
+                            "Unknown2": false,
+                            "WaistPercent": 0
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "sheet": "BaseParam",
+                        "row_id": 0,
+                        "fields": {
+                            "BraceletPercent": 0,
+                            "ChestHeadLegsFeetPercent": 0,
+                            "ChestHeadPercent": 0,
+                            "ChestLegsFeetPercent": 0,
+                            "ChestLegsGlovesPercent": 0,
+                            "ChestPercent": 0,
+                            "Description": "",
+                            "EarringPercent": 0,
+                            "FeetPercent": 0,
+                            "HandsPercent": 0,
+                            "HeadChestHandsLegsFeetPercent": 0,
+                            "HeadPercent": 0,
+                            "LegsFeetPercent": 0,
+                            "LegsPercent": 0,
+                            "MeldParam": [
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100
+                            ],
+                            "Name": "",
+                            "NecklacePercent": 0,
+                            "OffHandPercent": 0,
+                            "OneHandWeaponPercent": 0,
+                            "OrderPriority": 0,
+                            "PacketIndex": -1,
+                            "RingPercent": 0,
+                            "TwoHandWeaponPercent": 0,
+                            "UnderArmorPercent": 0,
+                            "Unknown0": 0,
+                            "Unknown1": 0,
+                            "Unknown2": false,
+                            "WaistPercent": 0
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "sheet": "BaseParam",
+                        "row_id": 0,
+                        "fields": {
+                            "BraceletPercent": 0,
+                            "ChestHeadLegsFeetPercent": 0,
+                            "ChestHeadPercent": 0,
+                            "ChestLegsFeetPercent": 0,
+                            "ChestLegsGlovesPercent": 0,
+                            "ChestPercent": 0,
+                            "Description": "",
+                            "EarringPercent": 0,
+                            "FeetPercent": 0,
+                            "HandsPercent": 0,
+                            "HeadChestHandsLegsFeetPercent": 0,
+                            "HeadPercent": 0,
+                            "LegsFeetPercent": 0,
+                            "LegsPercent": 0,
+                            "MeldParam": [
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100
+                            ],
+                            "Name": "",
+                            "NecklacePercent": 0,
+                            "OffHandPercent": 0,
+                            "OneHandWeaponPercent": 0,
+                            "OrderPriority": 0,
+                            "PacketIndex": -1,
+                            "RingPercent": 0,
+                            "TwoHandWeaponPercent": 0,
+                            "UnderArmorPercent": 0,
+                            "Unknown0": 0,
+                            "Unknown1": 0,
+                            "Unknown2": false,
+                            "WaistPercent": 0
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "sheet": "BaseParam",
+                        "row_id": 0,
+                        "fields": {
+                            "BraceletPercent": 0,
+                            "ChestHeadLegsFeetPercent": 0,
+                            "ChestHeadPercent": 0,
+                            "ChestLegsFeetPercent": 0,
+                            "ChestLegsGlovesPercent": 0,
+                            "ChestPercent": 0,
+                            "Description": "",
+                            "EarringPercent": 0,
+                            "FeetPercent": 0,
+                            "HandsPercent": 0,
+                            "HeadChestHandsLegsFeetPercent": 0,
+                            "HeadPercent": 0,
+                            "LegsFeetPercent": 0,
+                            "LegsPercent": 0,
+                            "MeldParam": [
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100
+                            ],
+                            "Name": "",
+                            "NecklacePercent": 0,
+                            "OffHandPercent": 0,
+                            "OneHandWeaponPercent": 0,
+                            "OrderPriority": 0,
+                            "PacketIndex": -1,
+                            "RingPercent": 0,
+                            "TwoHandWeaponPercent": 0,
+                            "UnderArmorPercent": 0,
+                            "Unknown0": 0,
+                            "Unknown1": 0,
+                            "Unknown2": false,
+                            "WaistPercent": 0
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "sheet": "BaseParam",
+                        "row_id": 0,
+                        "fields": {
+                            "BraceletPercent": 0,
+                            "ChestHeadLegsFeetPercent": 0,
+                            "ChestHeadPercent": 0,
+                            "ChestLegsFeetPercent": 0,
+                            "ChestLegsGlovesPercent": 0,
+                            "ChestPercent": 0,
+                            "Description": "",
+                            "EarringPercent": 0,
+                            "FeetPercent": 0,
+                            "HandsPercent": 0,
+                            "HeadChestHandsLegsFeetPercent": 0,
+                            "HeadPercent": 0,
+                            "LegsFeetPercent": 0,
+                            "LegsPercent": 0,
+                            "MeldParam": [
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100,
+                                100
+                            ],
+                            "Name": "",
+                            "NecklacePercent": 0,
+                            "OffHandPercent": 0,
+                            "OneHandWeaponPercent": 0,
+                            "OrderPriority": 0,
+                            "PacketIndex": -1,
+                            "RingPercent": 0,
+                            "TwoHandWeaponPercent": 0,
+                            "UnderArmorPercent": 0,
+                            "Unknown0": 0,
+                            "Unknown1": 0,
+                            "Unknown2": false,
+                            "WaistPercent": 0
+                        }
+                    }
+                ],
+                "BaseParamValue": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "BaseParamValueSpecial": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "Block": 0,
+                "BlockRate": 0,
+                "CanBeHq": false,
+                "CastTimeSeconds": 2,
+                "ClassJobCategory": {
+                    "value": 0,
+                    "sheet": "ClassJobCategory",
+                    "row_id": 0,
+                    "fields": {
+                        "ACN": false,
+                        "ADV": false,
+                        "ALC": false,
+                        "ARC": false,
+                        "ARM": false,
+                        "AST": false,
+                        "BLM": false,
+                        "BLU": false,
+                        "BRD": false,
+                        "BSM": false,
+                        "BTN": false,
+                        "CNJ": false,
+                        "CRP": false,
+                        "CUL": false,
+                        "DNC": false,
+                        "DRG": false,
+                        "DRK": false,
+                        "FSH": false,
+                        "GLA": false,
+                        "GNB": false,
+                        "GSM": false,
+                        "LNC": false,
+                        "LTW": false,
+                        "MCH": false,
+                        "MIN": false,
+                        "MNK": false,
+                        "MRD": false,
+                        "NIN": false,
+                        "Name": "",
+                        "PCT": false,
+                        "PGL": false,
+                        "PLD": false,
+                        "RDM": false,
+                        "ROG": false,
+                        "RPR": false,
+                        "SAM": false,
+                        "SCH": false,
+                        "SGE": false,
+                        "SMN": false,
+                        "THM": false,
+                        "VPR": false,
+                        "WAR": false,
+                        "WHM": false,
+                        "WVR": false
+                    }
+                },
+                "ClassJobRepair": {
+                    "value": 0,
+                    "sheet": "ClassJob",
+                    "row_id": 0,
+                    "fields": {
+                        "Abbreviation": "ADV",
+                        "BattleClassIndex": -1,
+                        "CanQueueForDuty": false,
+                        "ClassJobCategory": {
+                            "value": 30
+                        },
+                        "ClassJobParent": {
+                            "value": 0
+                        },
+                        "DohDolJobIndex": -1,
+                        "ExpArrayIndex": -1,
+                        "IsLimitedJob": false,
+                        "ItemSoulCrystal": {
+                            "value": 0
+                        },
+                        "ItemStartingWeapon": {
+                            "value": 0
+                        },
+                        "JobIndex": 0,
+                        "LimitBreak1": {
+                            "value": 0
+                        },
+                        "LimitBreak2": {
+                            "value": 0
+                        },
+                        "LimitBreak3": {
+                            "value": 0
+                        },
+                        "ModifierDexterity": 100,
+                        "ModifierHitPoints": 100,
+                        "ModifierIntelligence": 100,
+                        "ModifierManaPoints": 100,
+                        "ModifierMind": 100,
+                        "ModifierPiety": 100,
+                        "ModifierStrength": 100,
+                        "ModifierVitality": 100,
+                        "MonsterNote": {
+                            "value": 127
+                        },
+                        "Name": "adventurer",
+                        "NameEnglish": "Adventurer",
+                        "PartyBonus": 0,
+                        "Prerequisite": {
+                            "value": 0
+                        },
+                        "PrimaryStat": 0,
+                        "PvPActionSortRow": 0,
+                        "RelicQuest": {
+                            "value": 0
+                        },
+                        "Role": 0,
+                        "StartingLevel": 1,
+                        "StartingTown": {
+                            "value": 0
+                        },
+                        "UIPriority": 0,
+                        "Unknown0": "",
+                        "Unknown1": 0,
+                        "Unknown10": 0,
+                        "Unknown11": 0,
+                        "Unknown2": 100,
+                        "Unknown3": 100,
+                        "Unknown4": 100,
+                        "Unknown5": 100,
+                        "Unknown6": 100,
+                        "Unknown7": 100,
+                        "Unknown8": 0,
+                        "Unknown9": 0,
+                        "Unknown_70_1": 0,
+                        "Unknown_70_2": 0,
+                        "UnlockQuest": {
+                            "value": 0
+                        }
+                    }
+                },
+                "ClassJobUse": {
+                    "value": 0,
+                    "sheet": "ClassJob",
+                    "row_id": 0,
+                    "fields": {
+                        "Abbreviation": "ADV",
+                        "BattleClassIndex": -1,
+                        "CanQueueForDuty": false,
+                        "ClassJobCategory": {
+                            "value": 30
+                        },
+                        "ClassJobParent": {
+                            "value": 0
+                        },
+                        "DohDolJobIndex": -1,
+                        "ExpArrayIndex": -1,
+                        "IsLimitedJob": false,
+                        "ItemSoulCrystal": {
+                            "value": 0
+                        },
+                        "ItemStartingWeapon": {
+                            "value": 0
+                        },
+                        "JobIndex": 0,
+                        "LimitBreak1": {
+                            "value": 0
+                        },
+                        "LimitBreak2": {
+                            "value": 0
+                        },
+                        "LimitBreak3": {
+                            "value": 0
+                        },
+                        "ModifierDexterity": 100,
+                        "ModifierHitPoints": 100,
+                        "ModifierIntelligence": 100,
+                        "ModifierManaPoints": 100,
+                        "ModifierMind": 100,
+                        "ModifierPiety": 100,
+                        "ModifierStrength": 100,
+                        "ModifierVitality": 100,
+                        "MonsterNote": {
+                            "value": 127
+                        },
+                        "Name": "adventurer",
+                        "NameEnglish": "Adventurer",
+                        "PartyBonus": 0,
+                        "Prerequisite": {
+                            "value": 0
+                        },
+                        "PrimaryStat": 0,
+                        "PvPActionSortRow": 0,
+                        "RelicQuest": {
+                            "value": 0
+                        },
+                        "Role": 0,
+                        "StartingLevel": 1,
+                        "StartingTown": {
+                            "value": 0
+                        },
+                        "UIPriority": 0,
+                        "Unknown0": "",
+                        "Unknown1": 0,
+                        "Unknown10": 0,
+                        "Unknown11": 0,
+                        "Unknown2": 100,
+                        "Unknown3": 100,
+                        "Unknown4": 100,
+                        "Unknown5": 100,
+                        "Unknown6": 100,
+                        "Unknown7": 100,
+                        "Unknown8": 0,
+                        "Unknown9": 0,
+                        "Unknown_70_1": 0,
+                        "Unknown_70_2": 0,
+                        "UnlockQuest": {
+                            "value": 0
+                        }
+                    }
+                },
+                "Cooldowns": 0,
+                "DamageMag": 0,
+                "DamagePhys": 0,
+                "DefenseMag": 0,
+                "DefensePhys": 0,
+                "Delayms": 0,
+                "Description": "This crystalline prism captures the likeness of a piece of equipment and projects it onto another object of comparable form and function.\n\n[Necessary to project glamours.]",
+                "Desynth": 0,
+                "DyeCount": 0,
+                "EquipRestriction": 0,
+                "EquipSlotCategory": {
+                    "value": 0,
+                    "sheet": "EquipSlotCategory",
+                    "row_id": 0,
+                    "fields": {
+                        "Body": 0,
+                        "Ears": 0,
+                        "Feet": 0,
+                        "FingerL": 0,
+                        "FingerR": 0,
+                        "Gloves": 0,
+                        "Head": 0,
+                        "Legs": 0,
+                        "MainHand": 0,
+                        "Neck": 0,
+                        "OffHand": 0,
+                        "SoulCrystal": 0,
+                        "Waist": 0,
+                        "Wrists": 0
+                    }
+                },
+                "FilterGroup": 16,
+                "GrandCompany": {
+                    "value": 0,
+                    "sheet": "GrandCompany",
+                    "row_id": 0,
+                    "fields": {
+                        "Name": "None",
+                        "Unknown0": "",
+                        "Unknown1": "",
+                        "Unknown2": 0,
+                        "Unknown3": 0,
+                        "Unknown4": 0,
+                        "Unknown5": 0,
+                        "Unknown6": 0,
+                        "Unknown7": 0,
+                        "Unknown8": 127
+                    }
+                },
+                "Icon": {
+                    "id": 26235,
+                    "path": "ui/icon/026000/026235.tex",
+                    "path_hr1": "ui/icon/026000/026235_hr1.tex"
+                },
+                "IsAdvancedMeldingPermitted": false,
+                "IsCollectable": false,
+                "IsCrestWorthy": false,
+                "IsGlamorous": false,
+                "IsIndisposable": false,
+                "IsPvP": false,
+                "IsUnique": false,
+                "IsUntradable": false,
+                "ItemAction": {
+                    "value": 0,
+                    "sheet": "ItemAction",
+                    "row_id": 0,
+                    "fields": {
+                        "CondBattle": true,
+                        "CondLv": 0,
+                        "CondPVP": true,
+                        "CondPVPOnly": false,
+                        "Data": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "DataHQ": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "Type": 0
+                    }
+                },
+                "ItemGlamour": {
+                    "value": 0,
+                    "sheet": "Item",
+                    "row_id": 0,
+                    "fields": {
+                        "AdditionalData": {
+                            "value": 0
+                        },
+                        "Adjective": 0,
+                        "AetherialReduce": 0,
+                        "AlwaysCollectable": false,
+                        "Article": 0,
+                        "BaseParam": [
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            }
+                        ],
+                        "BaseParamModifier": 0,
+                        "BaseParamSpecial": [
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            }
+                        ],
+                        "BaseParamValue": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "BaseParamValueSpecial": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "Block": 0,
+                        "BlockRate": 0,
+                        "CanBeHq": false,
+                        "CastTimeSeconds": 2,
+                        "ClassJobCategory": {
+                            "value": 0
+                        },
+                        "ClassJobRepair": {
+                            "value": 0
+                        },
+                        "ClassJobUse": {
+                            "value": 0
+                        },
+                        "Cooldowns": 0,
+                        "DamageMag": 0,
+                        "DamagePhys": 0,
+                        "DefenseMag": 0,
+                        "DefensePhys": 0,
+                        "Delayms": 0,
+                        "Description": "",
+                        "Desynth": 0,
+                        "DyeCount": 0,
+                        "EquipRestriction": 0,
+                        "EquipSlotCategory": {
+                            "value": 0
+                        },
+                        "FilterGroup": 0,
+                        "GrandCompany": {
+                            "value": 0
+                        },
+                        "Icon": {
+                            "id": 0,
+                            "path": "ui/icon/000000/000000.tex",
+                            "path_hr1": "ui/icon/000000/000000_hr1.tex"
+                        },
+                        "IsAdvancedMeldingPermitted": false,
+                        "IsCollectable": false,
+                        "IsCrestWorthy": false,
+                        "IsGlamorous": false,
+                        "IsIndisposable": false,
+                        "IsPvP": false,
+                        "IsUnique": false,
+                        "IsUntradable": false,
+                        "ItemAction": {
+                            "value": 0
+                        },
+                        "ItemGlamour": {
+                            "value": 0
+                        },
+                        "ItemRepair": {
+                            "value": 0
+                        },
+                        "ItemSearchCategory": {
+                            "value": 0
+                        },
+                        "ItemSeries": {
+                            "value": 0
+                        },
+                        "ItemSortCategory": {
+                            "value": 2
+                        },
+                        "ItemSpecialBonus": {
+                            "value": 0
+                        },
+                        "ItemSpecialBonusParam": 0,
+                        "ItemUICategory": {
+                            "value": 0
+                        },
+                        "LevelEquip": 1,
+                        "LevelItem": {
+                            "value": 0
+                        },
+                        "Lot": false,
+                        "MateriaSlotCount": 0,
+                        "MaterializeType": 0,
+                        "ModelMain": 0,
+                        "ModelSub": 0,
+                        "Name": "",
+                        "Plural": "",
+                        "PossessivePronoun": 0,
+                        "PriceLow": 0,
+                        "PriceMid": 0,
+                        "Pronoun": 0,
+                        "Rarity": 0,
+                        "RequiredPvpRank": 0,
+                        "Singular": "",
+                        "StackSize": 1,
+                        "StartsWithVowel": 0,
+                        "SubStatCategory": 0,
+                        "Unknown0": 1,
+                        "Unknown2": 0,
+                        "Unknown3": 0,
+                        "Unknown4": 0
+                    }
+                },
+                "ItemRepair": {
+                    "value": 0,
+                    "sheet": "ItemRepairResource",
+                    "row_id": 0,
+                    "fields": {
+                        "Item": {
+                            "value": 0
+                        }
+                    }
+                },
+                "ItemSearchCategory": {
+                    "value": 59,
+                    "sheet": "ItemSearchCategory",
+                    "row_id": 59,
+                    "fields": {
+                        "Category": 3,
+                        "ClassJob": {
+                            "value": 0
+                        },
+                        "Icon": {
+                            "id": 60152,
+                            "path": "ui/icon/060000/060152.tex",
+                            "path_hr1": "ui/icon/060000/060152_hr1.tex"
+                        },
+                        "Name": "Catalysts",
+                        "Order": 15,
+                        "Unknown0": false
+                    }
+                },
+                "ItemSeries": {
+                    "value": 0,
+                    "sheet": "ItemSeries",
+                    "row_id": 0,
+                    "fields": {
+                        "Name": ""
+                    }
+                },
+                "ItemSortCategory": {
+                    "value": 10,
+                    "sheet": "ItemSortCategory",
+                    "row_id": 10,
+                    "fields": {
+                        "Param": 26
+                    }
+                },
+                "ItemSpecialBonus": {
+                    "value": 0,
+                    "sheet": "ItemSpecialBonus",
+                    "row_id": 0,
+                    "fields": {
+                        "Name": ""
+                    }
+                },
+                "ItemSpecialBonusParam": 0,
+                "ItemUICategory": {
+                    "value": 60,
+                    "sheet": "ItemUICategory",
+                    "row_id": 60,
+                    "fields": {
+                        "Icon": {
+                            "id": 60152,
+                            "path": "ui/icon/060000/060152.tex",
+                            "path_hr1": "ui/icon/060000/060152_hr1.tex"
+                        },
+                        "Name": "Catalyst",
+                        "OrderMajor": 7,
+                        "OrderMinor": 2
+                    }
+                },
+                "LevelEquip": 1,
+                "LevelItem": {
+                    "value": 35,
+                    "sheet": "ItemLevel",
+                    "row_id": 35,
+                    "fields": {
+                        "AdditionalEffect": 0,
+                        "AttackMagicPotency": 0,
+                        "AttackPower": 0,
+                        "AttackSpeed": 0,
+                        "BindResistance": 25,
+                        "BlindResistance": 25,
+                        "BlockRate": 139,
+                        "BlockStrength": 139,
+                        "BluntResistance": 5,
+                        "CP": 120,
+                        "CarefulDesynthesis": 0,
+                        "Control": 244,
+                        "Craftsmanship": 244,
+                        "CriticalHit": 79,
+                        "CriticalHitEvasion": 0,
+                        "CriticalHitPower": 0,
+                        "CriticalHitResilience": 0,
+                        "Defense": 418,
+                        "Delay": 0,
+                        "Determination": 79,
+                        "Dexterity": 57,
+                        "DirectHitRate": 79,
+                        "DoomResistance": 25,
+                        "EXPBonus": 0,
+                        "EarthResistance": 27,
+                        "EnfeeblingMagicPotency": 0,
+                        "EnhancementMagicPotency": 0,
+                        "Enmity": 0,
+                        "EnmityReduction": 0,
+                        "Evasion": 0,
+                        "FireResistance": 27,
+                        "GP": 155,
+                        "Gathering": 255,
+                        "HP": 0,
+                        "Haste": 0,
+                        "HealingMagicPotency": 0,
+                        "HeavyResistance": 25,
+                        "IceResistance": 27,
+                        "IncreasedSpiritbondGain": 0,
+                        "Intelligence": 57,
+                        "LightningResistance": 27,
+                        "MP": 0,
+                        "MagicDefense": 418,
+                        "MagicResistance": 0,
+                        "MagicalDamage": 40,
+                        "Mind": 57,
+                        "Morale": 0,
+                        "MovementSpeed": 0,
+                        "ParalysisResistance": 25,
+                        "Perception": 255,
+                        "PetrificationResistance": 25,
+                        "PhysicalDamage": 40,
+                        "PiercingResistance": 5,
+                        "Piety": 79,
+                        "PoisonResistance": 25,
+                        "ProjectileResistance": 0,
+                        "ReducedDurabilityLoss": 0,
+                        "Refresh": 0,
+                        "Regen": 0,
+                        "SilenceResistance": 25,
+                        "SkillSpeed": 79,
+                        "SlashingResistance": 5,
+                        "SleepResistance": 25,
+                        "SlowResistance": 25,
+                        "SpellSpeed": 79,
+                        "Spikes": 0,
+                        "Strength": 57,
+                        "StunResistance": 25,
+                        "TP": 0,
+                        "Tenacity": 79,
+                        "Unknown0": 0,
+                        "Vitality": 61,
+                        "WaterResistance": 27,
+                        "WindResistance": 27
+                    }
+                },
+                "Lot": false,
+                "MateriaSlotCount": 0,
+                "MaterializeType": 0,
+                "ModelMain": 0,
+                "ModelSub": 0,
+                "Name": "Glamour Prism",
+                "Plural": "glamour prisms",
+                "PossessivePronoun": 0,
+                "PriceLow": 24,
+                "PriceMid": 1000,
+                "Pronoun": 0,
+                "Rarity": 1,
+                "RequiredPvpRank": 0,
+                "Singular": "glamour prism",
+                "StackSize": 999,
+                "StartsWithVowel": 0,
+                "SubStatCategory": 0,
+                "Unknown0": 1,
+                "Unknown2": 0,
+                "Unknown3": 0,
+                "Unknown4": 10010
+            }
+        },
+        "ItemRepair": {
+            "value": 8,
+            "sheet": "ItemRepairResource",
+            "row_id": 8,
+            "fields": {
+                "Item": {
+                    "value": 33916,
+                    "sheet": "Item",
+                    "row_id": 33916,
+                    "fields": {
+                        "AdditionalData": {
+                            "value": 0
+                        },
+                        "Adjective": 0,
+                        "AetherialReduce": 0,
+                        "AlwaysCollectable": false,
+                        "Article": 0,
+                        "BaseParam": [
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            }
+                        ],
+                        "BaseParamModifier": 0,
+                        "BaseParamSpecial": [
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            },
+                            {
+                                "value": 0
+                            }
+                        ],
+                        "BaseParamValue": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "BaseParamValueSpecial": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "Block": 0,
+                        "BlockRate": 0,
+                        "CanBeHq": false,
+                        "CastTimeSeconds": 2,
+                        "ClassJobCategory": {
+                            "value": 0
+                        },
+                        "ClassJobRepair": {
+                            "value": 0
+                        },
+                        "ClassJobUse": {
+                            "value": 0
+                        },
+                        "Cooldowns": 0,
+                        "DamageMag": 0,
+                        "DamagePhys": 0,
+                        "DefenseMag": 0,
+                        "DefensePhys": 0,
+                        "Delayms": 0,
+                        "Description": "It has recently been discovered that this substance of unknown origin has the faculty to assimilate with other forms of matter, effectively restoring them to their original condition. This specific grade of dark matter has been shown to bond best with precisely crafted items made from high-quality materials.\n\n[Used to repair equipment for levels 1-100.]",
+                        "Desynth": 0,
+                        "DyeCount": 0,
+                        "EquipRestriction": 0,
+                        "EquipSlotCategory": {
+                            "value": 0
+                        },
+                        "FilterGroup": 16,
+                        "GrandCompany": {
+                            "value": 0
+                        },
+                        "Icon": {
+                            "id": 20405,
+                            "path": "ui/icon/020000/020405.tex",
+                            "path_hr1": "ui/icon/020000/020405_hr1.tex"
+                        },
+                        "IsAdvancedMeldingPermitted": false,
+                        "IsCollectable": false,
+                        "IsCrestWorthy": false,
+                        "IsGlamorous": false,
+                        "IsIndisposable": false,
+                        "IsPvP": false,
+                        "IsUnique": false,
+                        "IsUntradable": false,
+                        "ItemAction": {
+                            "value": 0
+                        },
+                        "ItemGlamour": {
+                            "value": 0
+                        },
+                        "ItemRepair": {
+                            "value": 0
+                        },
+                        "ItemSearchCategory": {
+                            "value": 59
+                        },
+                        "ItemSeries": {
+                            "value": 0
+                        },
+                        "ItemSortCategory": {
+                            "value": 10
+                        },
+                        "ItemSpecialBonus": {
+                            "value": 0
+                        },
+                        "ItemSpecialBonusParam": 0,
+                        "ItemUICategory": {
+                            "value": 60
+                        },
+                        "LevelEquip": 1,
+                        "LevelItem": {
+                            "value": 1
+                        },
+                        "Lot": false,
+                        "MateriaSlotCount": 0,
+                        "MaterializeType": 0,
+                        "ModelMain": 0,
+                        "ModelSub": 0,
+                        "Name": "Grade 8 Dark Matter",
+                        "Plural": "fragments of grade 8 dark matter",
+                        "PossessivePronoun": 0,
+                        "PriceLow": 5,
+                        "PriceMid": 280,
+                        "Pronoun": 0,
+                        "Rarity": 1,
+                        "RequiredPvpRank": 0,
+                        "Singular": "fragment of grade 8 dark matter",
+                        "StackSize": 999,
+                        "StartsWithVowel": 0,
+                        "SubStatCategory": 0,
+                        "Unknown0": 1,
+                        "Unknown2": 0,
+                        "Unknown3": 0,
+                        "Unknown4": 1080
+                    }
+                }
+            }
+        },
+        "ItemSearchCategory": {
+            "value": 0,
+            "sheet": "ItemSearchCategory",
+            "row_id": 0,
+            "fields": {
+                "Category": 0,
+                "ClassJob": {
+                    "value": 0,
+                    "sheet": "ClassJob",
+                    "row_id": 0,
+                    "fields": {
+                        "Abbreviation": "ADV",
+                        "BattleClassIndex": -1,
+                        "CanQueueForDuty": false,
+                        "ClassJobCategory": {
+                            "value": 30
+                        },
+                        "ClassJobParent": {
+                            "value": 0
+                        },
+                        "DohDolJobIndex": -1,
+                        "ExpArrayIndex": -1,
+                        "IsLimitedJob": false,
+                        "ItemSoulCrystal": {
+                            "value": 0
+                        },
+                        "ItemStartingWeapon": {
+                            "value": 0
+                        },
+                        "JobIndex": 0,
+                        "LimitBreak1": {
+                            "value": 0
+                        },
+                        "LimitBreak2": {
+                            "value": 0
+                        },
+                        "LimitBreak3": {
+                            "value": 0
+                        },
+                        "ModifierDexterity": 100,
+                        "ModifierHitPoints": 100,
+                        "ModifierIntelligence": 100,
+                        "ModifierManaPoints": 100,
+                        "ModifierMind": 100,
+                        "ModifierPiety": 100,
+                        "ModifierStrength": 100,
+                        "ModifierVitality": 100,
+                        "MonsterNote": {
+                            "value": 127
+                        },
+                        "Name": "adventurer",
+                        "NameEnglish": "Adventurer",
+                        "PartyBonus": 0,
+                        "Prerequisite": {
+                            "value": 0
+                        },
+                        "PrimaryStat": 0,
+                        "PvPActionSortRow": 0,
+                        "RelicQuest": {
+                            "value": 0
+                        },
+                        "Role": 0,
+                        "StartingLevel": 1,
+                        "StartingTown": {
+                            "value": 0
+                        },
+                        "UIPriority": 0,
+                        "Unknown0": "",
+                        "Unknown1": 0,
+                        "Unknown10": 0,
+                        "Unknown11": 0,
+                        "Unknown2": 100,
+                        "Unknown3": 100,
+                        "Unknown4": 100,
+                        "Unknown5": 100,
+                        "Unknown6": 100,
+                        "Unknown7": 100,
+                        "Unknown8": 0,
+                        "Unknown9": 0,
+                        "Unknown_70_1": 0,
+                        "Unknown_70_2": 0,
+                        "UnlockQuest": {
+                            "value": 0
+                        }
+                    }
+                },
+                "Icon": {
+                    "id": 0,
+                    "path": "ui/icon/000000/000000.tex",
+                    "path_hr1": "ui/icon/000000/000000_hr1.tex"
+                },
+                "Name": "",
+                "Order": 0,
+                "Unknown0": false
+            }
+        },
+        "ItemSeries": {
+            "value": 0,
+            "sheet": "ItemSeries",
+            "row_id": 0,
+            "fields": {
+                "Name": ""
+            }
+        },
+        "ItemSortCategory": {
+            "value": 5,
+            "sheet": "ItemSortCategory",
+            "row_id": 5,
+            "fields": {
+                "Param": 5
+            }
+        },
+        "ItemSpecialBonus": {
+            "value": 0,
+            "sheet": "ItemSpecialBonus",
+            "row_id": 0,
+            "fields": {
+                "Name": ""
+            }
+        },
+        "ItemSpecialBonusParam": 0,
+        "ItemUICategory": {
+            "value": 1,
+            "sheet": "ItemUICategory",
+            "row_id": 1,
+            "fields": {
+                "Icon": {
+                    "id": 60101,
+                    "path": "ui/icon/060000/060101.tex",
+                    "path_hr1": "ui/icon/060000/060101_hr1.tex"
+                },
+                "Name": "Pugilist's Arm",
+                "OrderMajor": 1,
+                "OrderMinor": 6
+            }
+        },
+        "LevelEquip": 81,
+        "LevelItem": {
+            "value": 520,
+            "sheet": "ItemLevel",
+            "row_id": 520,
+            "fields": {
+                "AdditionalEffect": 0,
+                "AttackMagicPotency": 0,
+                "AttackPower": 0,
+                "AttackSpeed": 0,
+                "BindResistance": 25,
+                "BlindResistance": 25,
+                "BlockRate": 867,
+                "BlockStrength": 867,
+                "BluntResistance": 15,
+                "CP": 316,
+                "CarefulDesynthesis": 0,
+                "Control": 2800,
+                "Craftsmanship": 2900,
+                "CriticalHit": 1455,
+                "CriticalHitEvasion": 0,
+                "CriticalHitPower": 0,
+                "CriticalHitResilience": 0,
+                "Defense": 3395,
+                "Delay": 0,
+                "Determination": 1455,
+                "Dexterity": 1478,
+                "DirectHitRate": 1455,
+                "DoomResistance": 25,
+                "EXPBonus": 0,
+                "EarthResistance": 188,
+                "EnfeeblingMagicPotency": 0,
+                "EnhancementMagicPotency": 0,
+                "Enmity": 0,
+                "EnmityReduction": 0,
+                "Evasion": 0,
+                "FireResistance": 188,
+                "GP": 420,
+                "Gathering": 3000,
+                "HP": 0,
+                "Haste": 0,
+                "HealingMagicPotency": 0,
+                "HeavyResistance": 25,
+                "IceResistance": 188,
+                "IncreasedSpiritbondGain": 0,
+                "Intelligence": 1478,
+                "LightningResistance": 188,
+                "MP": 0,
+                "MagicDefense": 3395,
+                "MagicResistance": 0,
+                "MagicalDamage": 104,
+                "Mind": 1478,
+                "Morale": 0,
+                "MovementSpeed": 0,
+                "ParalysisResistance": 25,
+                "Perception": 3000,
+                "PetrificationResistance": 25,
+                "PhysicalDamage": 104,
+                "PiercingResistance": 15,
+                "Piety": 1455,
+                "PoisonResistance": 25,
+                "ProjectileResistance": 0,
+                "ReducedDurabilityLoss": 0,
+                "Refresh": 0,
+                "Regen": 0,
+                "SilenceResistance": 25,
+                "SkillSpeed": 1455,
+                "SlashingResistance": 15,
+                "SleepResistance": 25,
+                "SlowResistance": 25,
+                "SpellSpeed": 1455,
+                "Spikes": 0,
+                "Strength": 1478,
+                "StunResistance": 25,
+                "TP": 0,
+                "Tenacity": 1455,
+                "Unknown0": 0,
+                "Vitality": 1540,
+                "WaterResistance": 188,
+                "WindResistance": 188
+            }
+        },
+        "Lot": true,
+        "MateriaSlotCount": 2,
+        "MaterializeType": 5,
+        "ModelMain": 8592556355,
+        "ModelSub": 8592556405,
+        "Name": "Monstrorum Claws",
+        "Plural": "pairs of monstrorum claws",
+        "PossessivePronoun": 0,
+        "PriceLow": 1329,
+        "PriceMid": 99999,
+        "Pronoun": 0,
+        "Rarity": 2,
+        "RequiredPvpRank": 0,
+        "Singular": "pair of monstrorum claws",
+        "StackSize": 1,
+        "StartsWithVowel": 0,
+        "SubStatCategory": 0,
+        "Unknown0": 1,
+        "Unknown2": 3,
+        "Unknown3": 3,
+        "Unknown4": 16270
+    }
+}
