@@ -1,6 +1,6 @@
 [project]
 name = "universalisapi"
-version = "0.1.0"
+version = "0.1.1"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
@@ -17,12 +17,18 @@ testpaths = [
     "tests",
     "integration"
 ]
+markers = [
+    "unittest: no API calls",
+    "integration: calls Universalis API"
+]
 
 [dependency-groups]
 dev = [
     "aioresponses>=0.7.7",
     "pytest>=8.3.4",
     "pytest-asyncio>=0.25.0",
+    "pytest-cov>=6.0.0",
+    "pytest-mock>=3.14.0",
 ]
 
 [build-system]
