@@ -21,6 +21,7 @@ markers = [
     "unittest: no API calls",
     "integration: calls Universalis API"
 ]
+addopts = "--cov=universalisapi --cov-report html"
 
 [dependency-groups]
 dev = [
