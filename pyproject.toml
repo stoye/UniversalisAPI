@@ -14,8 +14,8 @@ dependencies = [
 pythonpath = "src"
 asyncio_default_fixture_loop_scope = "session"
 testpaths = [
-    "tests",
-    "integration"
+    "tests/tests",
+    "tests/integration"
 ]
 markers = [
     "unittest: no API calls",
