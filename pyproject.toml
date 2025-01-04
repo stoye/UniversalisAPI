@@ -23,6 +23,14 @@ markers = [
 ]
 addopts = "--cov=universalisapi --cov-report html"
 
+[tool.ruff.lint]
+select = ["D", "F", "E", "W", "N", "UP", "ANN"]
+extend-select = ["E501"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+property-decorators = ["async_property.async_cached_property"]
+
 [dependency-groups]
 dev = [
     "aioresponses>=0.7.7",
