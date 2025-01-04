@@ -1,0 +1,494 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Universalis AGGREGATED Schema",
+  "description": "A response from Universalis' /aggregated endpoint",
+  "type": "object",
+  "properties": {
+    "results": {
+      "description": "The list of results",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "itemId": {
+            "type": "integer"
+          },
+          "nq": {
+            "type": "object",
+            "properties": {
+              "minListing": {
+                "type": "object",
+                "properties": {
+                  "world": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "price"
+                    ]
+                  },
+                  "dc": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      },
+                      "worldId": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "price",
+                      "worldId"
+                    ]
+                  },
+                  "region": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      },
+                      "worldId": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "price",
+                      "worldId"
+                    ]
+                  }
+                }
+              },
+              "medianListing": {
+                "type": "object",
+                "properties": {
+                  "world": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      }
+                    }
+                  },
+                  "dc": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      }
+                    }
+                  },
+                  "region": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              },
+              "recentPurchase": {
+                "type": "object",
+                "properties": {
+                  "world": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      },
+                      "timestamp": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "price",
+                      "timestamp"
+                    ]
+                  },
+                  "dc": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      },
+                      "timestamp": {
+                        "type": "integer"
+                      },
+                      "worldId": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "price",
+                      "timestamp",
+                      "worldId"
+                    ]
+                  },
+                  "region": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      },
+                      "timestamp": {
+                        "type": "integer"
+                      },
+                      "worldId": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "price",
+                      "timestamp",
+                      "worldId"
+                    ]
+                  }
+                }
+              },
+              "averageSalePrice": {
+                "type": "object",
+                "properties": {
+                  "world": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "price"
+                    ]
+                  },
+                  "dc": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "price"
+                    ]
+                  },
+                  "region": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "price"
+                    ]
+                  }
+                }
+              },
+              "dailySaleVelocity": {
+                "type": "object",
+                "properties": {
+                  "world": {
+                    "type": "object",
+                    "properties": {
+                      "quantity": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "quantity"
+                    ]
+                  },
+                  "dc": {
+                    "type": "object",
+                    "properties": {
+                      "quantity": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "quantity"
+                    ]
+                  },
+                  "region": {
+                    "type": "object",
+                    "properties": {
+                      "quantity": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "quantity"
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "minListing",
+              "recentPurchase",
+              "averageSalePrice",
+              "dailySaleVelocity"
+            ]
+          },
+          "hq": {
+            "type": "object",
+            "properties": {
+              "minListing": {
+                "type": "object",
+                "properties": {
+                  "world": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "price"
+                    ]
+                  },
+                  "dc": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      },
+                      "worldId": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "price",
+                      "worldId"
+                    ]
+                  },
+                  "region": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      },
+                      "worldId": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "price",
+                      "worldId"
+                    ]
+                  }
+                }
+              },
+              "medianListing": {
+                "type": "object",
+                "properties": {
+                  "world": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      }
+                    }
+                  },
+                  "dc": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      }
+                    }
+                  },
+                  "region": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              },
+              "recentPurchase": {
+                "type": "object",
+                "properties": {
+                  "world": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      },
+                      "timestamp": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "price",
+                      "timestamp"
+                    ]
+                  },
+                  "dc": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      },
+                      "timestamp": {
+                        "type": "integer"
+                      },
+                      "worldId": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "price",
+                      "timestamp",
+                      "worldId"
+                    ]
+                  },
+                  "region": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "integer"
+                      },
+                      "timestamp": {
+                        "type": "integer"
+                      },
+                      "worldId": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "price",
+                      "timestamp",
+                      "worldId"
+                    ]
+                  }
+                }
+              },
+              "averageSalePrice": {
+                "type": "object",
+                "properties": {
+                  "world": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "price"
+                    ]
+                  },
+                  "dc": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "price"
+                    ]
+                  },
+                  "region": {
+                    "type": "object",
+                    "properties": {
+                      "price": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "price"
+                    ]
+                  }
+                }
+              },
+              "dailySaleVelocity": {
+                "type": "object",
+                "properties": {
+                  "world": {
+                    "type": "object",
+                    "properties": {
+                      "quantity": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "quantity"
+                    ]
+                  },
+                  "dc": {
+                    "type": "object",
+                    "properties": {
+                      "quantity": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "quantity"
+                    ]
+                  },
+                  "region": {
+                    "type": "object",
+                    "properties": {
+                      "quantity": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "quantity"
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "minListing",
+              "recentPurchase",
+              "averageSalePrice",
+              "dailySaleVelocity"
+            ]
+          },
+          "worldUploadTimes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "worldId": {
+                  "type": "integer"
+                },
+                "timestamp": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "worldId",
+                "timestamp"
+              ]
+            }
+          }
+        },
+        "required": [
+          "itemId",
+          "nq",
+          "hq"
+        ]
+      }
+    },
+    "failedItems": {
+      "description": "List of ids of failed items",
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    }
+  },
+  "required": [
+    "results",
+    "failedItems"
+  ]
+}

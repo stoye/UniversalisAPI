@@ -1,76 +1,10 @@
-import json
-from pathlib import Path
 import random
 
 import pytest
 from aioresponses import aioresponses
 
-from universalisapi.api_objects.mb_data import MBDataResponse, MBDataResponseItem
-
 
 # globals
-AGGREGATE_DATA = {}
-agg_data_path = Path('.') / 'tests' / 'aggregate_data'
-for file_path in agg_data_path.glob('*.json'):
-    with file_path.open('r', encoding='utf-8') as f:
-        AGGREGATE_DATA[file_path.stem] = json.load(f)
-
-@pytest.fixture(params=[(stem, data) for stem, data in AGGREGATE_DATA.items()],
-                ids=(lambda x: x[0]))
-def aggregate_data(request):
-    return request.param
-
-LEAST_RECENT_DATA = {}
-least_recent_data_path = Path('.') / 'tests' / 'least_recent_data'
-for file_path in least_recent_data_path.glob('*.json'):
-    with file_path.open('r', encoding='utf-8') as f:
-        LEAST_RECENT_DATA[file_path.stem] = json.load(f)
-
-@pytest.fixture(params=[(stem, data) for stem, data in LEAST_RECENT_DATA.items()],
-                ids=(lambda x: x[0]))
-def least_recent_data(request):
-    return request.param
-
-MB_DATA_DATA = {}
-MB_DATA_DATA_PATH = Path('.') / 'tests' / 'mb_data_data'
-for file_name in MB_DATA_DATA_PATH.glob('*.json'):
-    with file_name.open('r', encoding='utf-8') as f:
-        MB_DATA_DATA[file_name.stem] = json.load(f)
-
-@pytest.fixture(params=[(stem, data) for stem, data in MB_DATA_DATA.items()],
-                ids=(lambda x: x[0]))
-def mb_data_data(request):
-    return request.param
-
-@pytest.fixture
-def mb_data_data_parser(mb_data_data):
-    stem, data = mb_data_data
-    split_stem = stem.split('_')
-    w_d_r = split_stem[0]
-    region = split_stem[1]
-    items_str = split_stem[2]
-    item_ids = list(map(int, items_str.split(',')))
-    return w_d_r, region, items_str, item_ids, data
-
-@pytest.fixture
-def mb_data_data_objs(mb_data_data):
-    stem, data = mb_data_data
-    if 'items' not in data:
-        stem_data = stem.split('_')
-        w_d = stem_data[0]
-        w_d_name = stem_data[1]
-        data = {
-            'itemIDs': [data['itemID']],
-            'items': {str(data['itemID']): data},
-            w_d: w_d_name,
-            'unresolvedItems': []
-        }
-    return stem, data, MBDataResponse(data, {})
-
-@pytest.fixture
-def mb_data_data_items(mb_data_data_objs):
-    stem, data, resp = mb_data_data_objs
-    return stem, data, resp, zip(data['items'].values(), resp.items.values())
 
 
 # aioresponses

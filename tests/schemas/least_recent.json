@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Universalis LEAST_RECENT Schema",
+  "description": "A response from Universalis' /extra/stats/least-recently-updated endpoint",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "itemID": {
+            "type": "integer"
+          },
+          "lastUploadTime": {
+            "type": "integer"
+          },
+          "worldID": {
+            "type": "integer"
+          },
+          "worldName": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "itemID",
+          "lastUploadTime",
+          "worldID",
+          "worldName"
+        ]
+      }
+    }
+  }
+}

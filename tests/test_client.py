@@ -57,8 +57,8 @@ class TestUniversalisAPIClient:
                 await self.client._check_region_name(test_name)
 
     @pytest.mark.asyncio
-    async def test_current_item_price_data(self, mocked_aggregated, aggregate_data):
-        stem, data = aggregate_data
+    async def test_current_item_price_data(self, mocked_aggregated, aggregate_data_parametrized):
+        stem, data = aggregate_data_parametrized
         region, item_ids = stem.split('_')
         mocked_aggregated(item_ids, region, data)
         item_ids = list(map(int, item_ids.split(',')))
@@ -84,8 +84,8 @@ class TestUniversalisAPIClient:
     @pytest.mark.asyncio
     @pytest.mark.parametrize("hq", [True, False])
     @pytest.mark.skip
-    async def test_current_item_price(self, mocked_aggregated, hq, aggregate_data):
-        stem, data = aggregate_data
+    async def test_current_item_price(self, mocked_aggregated, hq, aggregate_data_parametrized):
+        stem, data = aggregate_data_parametrized
         region, item_ids = stem.split('_')
         mocked_aggregated(item_ids, region, data)
         item_ids = list(map(int, item_ids.split(',')))
@@ -101,8 +101,8 @@ class TestUniversalisAPIClient:
             data = await self.client.least_recent_items()
 
     @pytest.mark.asyncio
-    async def test_least_recent_items(self, mocked_least_recent_items, least_recent_data):
-        stem, data = least_recent_data
+    async def test_least_recent_items(self, mocked_least_recent_items, least_recent_data_parametrized):
+        stem, data = least_recent_data_parametrized
         world_dc, world_dc_name, entries = stem.split('_')
         entries = int(entries)
         mocked_least_recent_items(world_dc, world_dc_name, entries, data)
