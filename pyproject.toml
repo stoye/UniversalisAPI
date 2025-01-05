@@ -1,7 +1,7 @@
 [project]
 name = "universalisapi"
 version = "0.1.1"
-description = "Add your description here"
+description = "A python wrapper for FFXIV Universalis"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [

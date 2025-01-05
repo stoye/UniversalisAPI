@@ -1,5 +1,7 @@
 # universalisapi
 
+[![Documentation Status](https://readthedocs.org/projects/universalisapi/badge/?version=latest)](https://universalisapi.readthedocs.io/en/latest/?badge=latest)
+
 A Python wrapper for interacting with [Universalis.app](https://universalis.app)'s public API.
 
 ### Installation
