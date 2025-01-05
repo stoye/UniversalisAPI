@@ -678,6 +678,14 @@ dependencies = [
     { name = "async-property" },
 ]
 
+[package.optional-dependencies]
+docs = [
+    { name = "intersphinx-registry" },
+    { name = "numpydoc" },
+    { name = "pydata-sphinx-theme" },
+    { name = "sphinx" },
+]
+
 [package.dev-dependencies]
 dev = [
     { name = "aioresponses" },
@@ -696,6 +704,10 @@ dev = [
 requires-dist = [
     { name = "aiohttp", specifier = ">=3.11.11" },
     { name = "async-property", specifier = ">=0.2.2" },
+    { name = "intersphinx-registry", marker = "extra == 'docs'", specifier = ">=0.2412.7" },
+    { name = "numpydoc", marker = "extra == 'docs'", specifier = ">=1.8.0" },
+    { name = "pydata-sphinx-theme", marker = "extra == 'docs'", specifier = ">=0.16.1" },
+    { name = "sphinx", marker = "extra == 'docs'", specifier = ">=8.1.3" },
 ]
 
 [package.metadata.requires-dev]
