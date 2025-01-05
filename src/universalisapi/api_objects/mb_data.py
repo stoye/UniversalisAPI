@@ -2,7 +2,7 @@ import logging
 
 import aiohttp
 
-from ..wrapper import UniversalisAPIWrapper
+from .._wrapper import UniversalisAPIWrapper
 from ..exceptions import UniversalisError
 
 

@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from universalisapi.wrapper import UniversalisAPIWrapper
+from universalisapi._wrapper import UniversalisAPIWrapper
 from universalisapi.api_objects.mb_data import MBDataResponse
 
 

@@ -18,13 +18,13 @@ class TestUniversalisAPIClient:
 
     @pytest.mark.asyncio
     async def test_data_center_names(self, mocked_data_centers, data_centers):
-        dc_names = await self.client.data_center_names()
+        dc_names = await self.client.data_center_names
         data_center_names = [dc['name'].lower() for dc in data_centers]
         assert dc_names == data_center_names
 
     @pytest.mark.asyncio
     async def test_data_center_worlds(self, mocked_data_centers, data_centers):
-        dc_worlds = await self.client.data_center_worlds()
+        dc_worlds = await self.client.data_center_worlds
         data_center_worlds = {}
         for dc in data_centers:
             data_center_worlds[dc['name'].lower()] = dc['worlds']
@@ -37,24 +37,9 @@ class TestUniversalisAPIClient:
 
     @pytest.mark.asyncio
     async def test_world_names(self, mocked_worlds, worlds):
-        world_names = await self.client.world_names()
+        world_names = await self.client.world_names
         wns = [world['name'].lower() for world in worlds]
         assert wns == world_names
-
-    @pytest.mark.asyncio
-    @pytest.mark.parametrize('n',list(range(20)))
-    async def test__check_region_name(self, mocked_worlds, mocked_data_centers, valid_region_names, n,
-                                      get_random_unicode):
-        if n <= 10:
-            test_name = random.choice(valid_region_names)
-        else:
-            test_name = get_random_unicode(random.randint(4,16))
-
-        if test_name in valid_region_names:
-            assert await self.client._check_region_name(test_name) is None
-        else:
-            with pytest.raises(UniversalisError):
-                await self.client._check_region_name(test_name)
 
     @pytest.mark.asyncio
     async def test_current_item_price_data(self, mocked_aggregated, aggregate_data_parametrized):
@@ -89,7 +74,7 @@ class TestUniversalisAPIClient:
         region, item_ids = stem.split('_')
         mocked_aggregated(item_ids, region, data)
         item_ids = list(map(int, item_ids.split(',')))
-        resp_data = await self.client.current_average_item_price(region, item_ids, hq)
+        resp_data = await self.client.current_average_item_price(region, item_ids, hq=hq)
         if hq:
             assert resp_data == {42884: 116110}
         else:
@@ -98,7 +83,7 @@ class TestUniversalisAPIClient:
     @pytest.mark.asyncio
     async def test_least_recent_items_failure(self):
         with pytest.raises(UniversalisError):
-            data = await self.client.least_recent_items()
+            await self.client.least_recent_items('blah')
 
     @pytest.mark.asyncio
     async def test_least_recent_items(self, mocked_least_recent_items, least_recent_data_parametrized):
@@ -106,10 +91,7 @@ class TestUniversalisAPIClient:
         world_dc, world_dc_name, entries = stem.split('_')
         entries = int(entries)
         mocked_least_recent_items(world_dc, world_dc_name, entries, data)
-        if world_dc == 'world':
-            resp_data = await self.client.least_recent_items(world=world_dc_name, entries=entries)
-        else:
-            resp_data = await self.client.least_recent_items(dc=world_dc_name, entries=entries)
+        resp_data = await self.client.least_recent_items(world_dc_name, entries=entries)
         assert data == resp_data
 
     @pytest.mark.asyncio
@@ -145,5 +127,8 @@ class TestUniversalisAPIClient:
             'fields': ','.join(f)
         }
         mocked_mb_current_data(region, items_str, params, data)
-        resp = await self.client.mb_current_data(item_ids, region, l, e, hq, s_w, e_w, f)
+        resp = await self.client.mb_current_data(item_ids, region,
+                                                 listings=l, entries=e, hq=hq,
+                                                 stats_within=s_w, entries_within=e_w,
+                                                 fields=f)
         assert data == resp.data

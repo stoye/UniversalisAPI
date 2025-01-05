@@ -4,7 +4,7 @@ import aiohttp
 import pytest
 
 from universalisapi.exceptions import UniversalisError
-from universalisapi.wrapper import UniversalisAPIWrapper
+from universalisapi._wrapper import UniversalisAPIWrapper
 
 
 @pytest.mark.unittest
@@ -30,6 +30,20 @@ class TestUniversalisAPIWrapper:
     async def test_get_endpoint(self):
         # Implicitly tested by basically everything
         pass
+
+    @pytest.mark.parametrize('n',list(range(20)))
+    def test__check_region_name(self, mocked_worlds, mocked_data_centers, valid_region_names, n,
+                                      get_random_unicode):
+        if n <= 10:
+            test_name = random.choice(valid_region_names)
+        else:
+            test_name = get_random_unicode(random.randint(4,16))
+
+        if test_name in valid_region_names:
+            assert self.wrapper._check_region_name(test_name) is None
+        else:
+            with pytest.raises(UniversalisError):
+                self.wrapper._check_region_name(test_name)
 
     @pytest.mark.asyncio
     async def test__get_mb_current_data_defaults(self, mocked_mb_current_data, mb_data_data_parser):
@@ -75,6 +89,9 @@ class TestUniversalisAPIWrapper:
         }
         mocked_mb_current_data(region, items_str, params, data)
 
-        resp_data = await self.wrapper._get_mb_current_data(item_ids, region, l, e, hq, s_w, e_w, f)
+        resp_data = await self.wrapper._get_mb_current_data(
+            item_ids, region,
+            listings=l, entries=e, hq=hq,
+            stats_within=s_w, entries_within=e_w, fields=f)
 
         assert data == resp_data
