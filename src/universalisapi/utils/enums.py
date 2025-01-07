@@ -169,6 +169,3 @@ class World(StrEnum):
     KR_MOOGLE = "모그리" # korean moogle
     KR_TONBERRY = "톤베리" # korean tonberry
     KR_FENRIR = "펜리르" # korean fenrir
-
-
-type APIRegion = World | DataCenter | Region

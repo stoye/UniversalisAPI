@@ -16,10 +16,14 @@ docs = [
     "pydata-sphinx-theme>=0.16.1",
     "sphinx>=8.1.3"
 ]
+dev = [
+    "mypy>=1.14.1",
+]
 
 [tool.pytest.ini_options]
 pythonpath = "src"
 asyncio_default_fixture_loop_scope = "session"
+log_cli_level = "info"
 testpaths = [
     "tests/tests",
     "tests/integration"
@@ -28,7 +32,7 @@ markers = [
     "unittest: no API calls",
     "integration: calls Universalis API"
 ]
-addopts = "--cov=universalisapi --cov-report html"
+addopts = "--cov=universalisapi --cov-report html --strict-config --strict-markers"
 
 [tool.ruff.lint]
 select = ["D", "F", "E", "W", "N", "UP", "ANN"]
@@ -38,11 +42,16 @@ extend-select = ["E501"]
 convention = "numpy"
 property-decorators = ["async_property.async_cached_property"]
 
+[[tool.mypy.overrides]]
+module = ["async_property.*"]
+ignore_missing_imports = true
+
 [dependency-groups]
 dev = [
     "aioresponses>=0.7.7",
     "intersphinx-registry>=0.2412.7",
     "jsonschema>=4.23.0",
+    "mypy>=1.14.1",
     "numpydoc>=1.8.0",
     "pydata-sphinx-theme>=0.16.1",
     "pytest>=8.3.4",

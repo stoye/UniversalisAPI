@@ -10,8 +10,8 @@ client = UniversalisAPIClient()
 
 async def get_least_recent_items(n):
     l = {}
-    worlds = await client.world_names()
-    dcs = await client.data_center_names()
+    worlds = await client.world_names
+    dcs = await client.data_center_names
     for _ in range(n):
         w_d = ['world', 'dcName']
         opt = random.choice(w_d)
@@ -20,7 +20,7 @@ async def get_least_recent_items(n):
             world = random.choice(worlds)
             stem = f'world_{world}_{entries}'
             try:
-                data = await client.least_recent_items(world=world, entries=entries)
+                data = await client.least_recent_items(world, entries=entries)
             except UniversalisError:
                 pass
             else:
@@ -29,7 +29,7 @@ async def get_least_recent_items(n):
             dc = random.choice(dcs)
             stem = f'dcName_{dc}_{entries}'
             try:
-                data = await client.least_recent_items(dc=dc, entries=entries)
+                data = await client.least_recent_items(dc, entries=entries)
             except UniversalisError:
                 pass
             else:
@@ -43,8 +43,8 @@ async def get_aggregate_data(items, n):
     for item in items:
         ids.append(item['itemID'])
     regions = client.valid_regions
-    regions.extend(await client.world_names())
-    regions.extend(await client.data_center_names())
+    regions.extend(await client.world_names)
+    regions.extend(await client.data_center_names)
     for _ in range(n):
         region = random.choice(regions)
         try:
@@ -63,19 +63,27 @@ async def get_mb_data_data(items, n):
     ids = []
     for item in items:
         ids.append(item['itemID'])
-    opts = {'worldName': await client.world_names(),
-            'dcName': await client.data_center_names(),
+    opts = {'worldName': await client.world_names,
+            'dcName': await client.data_center_names,
             'regionName': client.valid_regions}
-    opt = random.choice(list(opts.keys()))
-    for _ in range(n):
+    for i in range(n):
+        if i == 0:
+            # ensure at least 1 regionName
+            opt = 'regionName'
+        else:
+            opt = random.choice(list(opts.keys()))
         region = random.choice(opts[opt])
         try:
             data = await client._get_mb_current_data(ids,region)
-        except UniversalisError:
+        except UniversalisError as e:
+            print(f'{region}: {ids}')
+            print(e)
             pass
         else:
             stem = f'{opt}_{region}_{",".join(map(str,ids))}'
             l[stem] = data
+
+    # add one region specifically
     return l
 
 
@@ -112,4 +120,4 @@ if __name__ == '__main__':
         with file_path.open('w', encoding='utf-8') as f:
             json.dump(data, f)
 
-    loop.run_until_complete(client.session.close())
+    #loop.run_until_complete(client.session.close())
