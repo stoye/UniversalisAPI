@@ -1,5 +1,5 @@
 import random
-
+from collections.abc import Callable
 import pytest
 from aioresponses import aioresponses
 
@@ -8,39 +8,48 @@ from aioresponses import aioresponses
 
 
 # aioresponses
+"""
+The following fixtures are for making mocked API responses using aioresponses.
+"""
 @pytest.fixture
-def mocked_response():
+def mocked_response() -> aioresponses:
+    """Return the base mocked response object."""
     with aioresponses() as m:
         yield m
 
 @pytest.fixture
-def mocked_data_centers(mocked_response, base_url, data_centers):
+def mocked_data_centers(mocked_response, base_url, data_centers) -> None:
+    """Call this to mock /data-centers."""
     mocked_response.get(f'{base_url}/data-centers',
                         status=200,
                         payload=data_centers)
 
 @pytest.fixture
-def mocked_worlds(mocked_response, base_url, worlds):
+def mocked_worlds(mocked_response, base_url, worlds) -> None:
+    """Call this to mock /worlds."""
     mocked_response.get(f'{base_url}/worlds',
                         status=200,
                         payload=worlds)
 
 @pytest.fixture
-def mocked_aggregated(mocked_response, base_url):
-    def _mocked_aggregated_generator(item_ids, region, data):
+def mocked_aggregated(mocked_response, base_url) -> Callable:
+    """Return a function that generates mocked response of /aggregated."""
+    def _mocked_aggregated_generator(item_ids, region, data) -> None:
         url = f'{base_url}/aggregated/{region}/{item_ids}'
         mocked_response.get(url, status=200, payload=data)
     yield _mocked_aggregated_generator
 
 @pytest.fixture
-def mocked_least_recent_items(mocked_response, base_url):
+def mocked_least_recent_items(mocked_response, base_url) -> Callable:
+    """Return a function that generates a mocked response of /extra/stats/least-recently-updated."""
     def _mocked_least_recent_items_generator(k, v, entries, data):
         url = f'{base_url}/extra/stats/least-recently-updated?{k}={v}&entries={entries}'
         mocked_response.get(url, status=200, payload=data)
     yield _mocked_least_recent_items_generator
 
 @pytest.fixture
-def mocked_mb_current_data(mocked_response, base_url):
+def mocked_mb_current_data(mocked_response, base_url) -> Callable:
+    """Return a function that generates a mocked response of /{region}/{item_ids}."""
     def _mocked_mb_current_data_generator(region, items_str, params, data):
         url = f'{base_url}/{region}/{items_str}'
         if params:
@@ -55,7 +64,8 @@ def mocked_mb_current_data(mocked_response, base_url):
 
 # helper functions
 @pytest.fixture
-def get_random_unicode():
+def get_random_unicode() -> Callable:
+    """Return a function that generates random unicode strings."""
     def _get_random_unicode(length):
         # Update this to include code point ranges to be sampled
         include_ranges = [
