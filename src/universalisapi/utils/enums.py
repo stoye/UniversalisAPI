@@ -95,7 +95,7 @@ class World(StrEnum):
     MOOGLE = "moogle"
     TONBERRY = "tonberry"
     ADAMANTOISE = "adamantoise"
-    COUELR = "coeurl"
+    COUERL = "coeurl"
     MALBORO ="malboro"
     TIAMAT = "tiamat"
     ULTROS = "ultros"
