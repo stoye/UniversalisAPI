@@ -1,4 +1,3 @@
-import asyncio
 import random
 
 import jsonschema
@@ -6,7 +5,7 @@ import pytest
 
 from universalisapi.client import UniversalisAPIClient
 from universalisapi.exceptions import UniversalisError
-from universalisapi.api_objects.enums import World, DataCenter
+from universalisapi.utils.enums import World, DataCenter
 
 
 @pytest.mark.integration
