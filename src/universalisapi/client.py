@@ -3,12 +3,14 @@
 import logging
 from typing import cast
 
+import aiohttp
 import async_property
 
 from .api_objects.mb_data import MBDataResponse
 from ._wrapper import UniversalisAPIWrapper
 from .exceptions import UniversalisError
-from .api_objects.enums import DataCenter, World, APIRegion
+from universalisapi.utils.enums import DataCenter, World
+from universalisapi.utils.types import APIRegion
 
 
 module_logger = logging.getLogger(__name__)
@@ -19,8 +21,9 @@ class UniversalisAPIClient(UniversalisAPIWrapper):
 
     _UniversalisAPIClient_logger = module_logger.getChild(__qualname__)
 
-    def __init__(self, api_key: str = '') -> None:
-        super().__init__()
+    def __init__(self, *, api_key: str = '',
+                 session: aiohttp.ClientSession | None = None) -> None:
+        super().__init__(session=session)
         self._instance_logger = self._UniversalisAPIClient_logger.getChild(
             str(id(self)))
         self.api_key = api_key

@@ -4,7 +4,8 @@ from typing import cast
 import aiohttp
 
 from .exceptions import UniversalisError
-from .api_objects.enums import APIRegion, Region, DataCenter, World
+from universalisapi.utils.enums import Region, DataCenter, World
+from .utils.types import APIRegion
 
 
 # configure module logging
@@ -73,7 +74,7 @@ class UniversalisAPIWrapper:
     ]
     _UniversalisAPIWrapper_logger = module_logger.getChild(__qualname__)
 
-    def __init__(self, session: aiohttp.ClientSession | None = None) -> None:
+    def __init__(self, *, session: aiohttp.ClientSession | None = None) -> None:
         self._session = session
         # instance logger
         self._instance_logger = self._UniversalisAPIWrapper_logger.getChild(
