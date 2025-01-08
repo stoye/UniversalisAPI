@@ -205,12 +205,20 @@ class UniversalisAPIClient(UniversalisAPIWrapper):
 
         for item in item_data['results']:
             asp_hq_info = item['hq']['averageSalePrice']
+            asp_nq_info = item['nq']['averageSalePrice']
             if hq and asp_hq_info:
                 avg_price = self.parse_region_data(asp_hq_info)['price']
-            else:
-                avg_price = self.parse_region_data(item['nq']['averageSalePrice'])
+                avg_prices[item['itemId']] = round(avg_price)
+            elif asp_nq_info:
+                avg_price = self.parse_region_data(asp_nq_info)
                 avg_price = avg_price['price']
-            avg_prices[item['itemId']] = round(avg_price)
+                avg_prices[item['itemId']] = round(avg_price)
+            else:
+                #TODO figure out a better way to represent no price data
+                self._instance_logger.info("No average price data for item",
+                                           extra={'item': item['itemId'],
+                                                  'item_data': item})
+                avg_prices[item['itemId']] = -1
 
         return avg_prices
 

@@ -67,17 +67,27 @@ class TestUniversalisAPIClient:
 
     @pytest.mark.asyncio
     @pytest.mark.parametrize("hq", [True, False])
-    @pytest.mark.skip
-    async def test_current_item_price(self, mocked_aggregated, hq, aggregate_data_parametrized):
+    async def test_current_average_item_price(self, mocked_aggregated, hq, aggregate_data_parametrized):
+        """This test depends upon test_parse_region_data."""
         stem, data = aggregate_data_parametrized
+
+        # construct data ourselves
+        test_data = {}
+        for item in data['results']:
+            if hq and item['hq']['averageSalePrice']:
+                test_data[item['itemId']] = round(
+                    UniversalisAPIClient.parse_region_data(item['hq']['averageSalePrice'])['price'])
+            elif item['nq']['averageSalePrice']:
+                test_data[item['itemId']] = round(
+                    UniversalisAPIClient.parse_region_data(item['nq']['averageSalePrice'])['price'])
+            else:
+                test_data[item['itemId']] = -1
+
         region, item_ids = stem.split('_')
         mocked_aggregated(item_ids, region, data)
         item_ids = list(map(int, item_ids.split(',')))
         resp_data = await self.client.current_average_item_price(region, item_ids, hq=hq)
-        if hq:
-            assert resp_data == {42884: 116110}
-        else:
-            assert resp_data == {42884: 120000}
+        assert test_data == resp_data
 
     @pytest.mark.asyncio
     async def test_least_recent_items_failure(self):
