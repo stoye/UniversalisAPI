@@ -132,7 +132,7 @@ def mb_data_data_parser(mb_data_data_parametrized) -> tuple[str, str, str, list[
     return w_d_r, region, items_str, item_ids, data
 
 @pytest.fixture
-def mb_data_data_objs(mb_data_data_parser) -> tuple[str, dict, MBDataResponse]:
+def mb_data_data_objs(mb_data_data_parser) -> tuple[dict, MBDataResponse]:
     """
     Create test MBDataResponse objects.
 
@@ -156,14 +156,23 @@ def mb_data_data_objs(mb_data_data_parser) -> tuple[str, dict, MBDataResponse]:
         'entries_within': None,
         'fields': None
     }
-    return f'{w_d_r}_{region}_{items_str}', data, MBDataResponse(data, params)
+    return data, MBDataResponse(data, params)
 
 @pytest.fixture
 def mb_data_data_items(mb_data_data_parser):
+    """
+    Create test MBDataResponseItem objects.
+
+    Returns
+    -------
+
+    """
     w_d_r, region, items_str, item_ids, data = mb_data_data_parser
 
     if 'items' in data:
         item_objs = [MBDataResponseItem(item_data) for item_data in data['items'].values()]
+        item_data = data['items'].values()
     else:
         item_objs = [MBDataResponseItem(data)]
-    return w_d_r, data, zip(data['items'].values(), resp.items.values())
+        item_data = [data]
+    return item_data, item_objs
