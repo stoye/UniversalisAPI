@@ -127,3 +127,22 @@ class TestMBDataResponse:
                 listing_ids.append(listing['listingID'])
 
         assert resp.listing_ids == listing_ids
+
+    @pytest.mark.asyncio
+    @pytest.mark.skip
+    async def test_get_price_changes(self,
+                                     mb_data_data_old_and_changes,
+                                     mocked_mb_current_data):
+        old_data, old_resp_obj, new_data = mb_data_data_old_and_changes
+
+        # set up request
+        params = old_resp_obj._params.copy()
+        region = params.pop('region')
+        items_str = ','.join(map(str,params.pop('item_ids')))
+        mocked_mb_current_data(region, items_str, params, new_data)
+
+        new_resp_obj = MBDataResponse(new_data, old_resp_obj._params.copy())
+
+        price_changes = await old_resp_obj.get_price_changes()
+
+        assert new_resp_obj.data == old_resp_obj.data

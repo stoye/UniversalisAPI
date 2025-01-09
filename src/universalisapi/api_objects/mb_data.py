@@ -52,7 +52,7 @@ class MBDataResponseItem(UniversalisAPIWrapper):
 
         self._data: dict = item_data
         self.item_id: int = self._data['itemID']
-        self._last_upload_time_ms = self._data.get('lastUploadTime')
+        self._last_upload_time_ms: int = cast(int, self._data.get('lastUploadTime'))
         self.last_upload_time: datetime = datetime.fromtimestamp(
             round(self._last_upload_time_ms / 1000, 4))
         self.listings: list[dict] = self._data['listings']

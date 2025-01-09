@@ -67,11 +67,7 @@ async def get_mb_data_data(items, n):
             'dcName': await client.data_center_names,
             'regionName': client.valid_regions}
     for i in range(n):
-        if i == 0:
-            # ensure at least 1 regionName
-            opt = 'regionName'
-        else:
-            opt = random.choice(list(opts.keys()))
+        opt = random.choice(list(opts.keys()))
         region = random.choice(opts[opt])
         try:
             data = await client._get_mb_current_data(ids,region)
@@ -116,6 +112,18 @@ if __name__ == '__main__':
     for stem, data in mb_data_data.items():
         stem += '.json'
         file_path = base_mbd_path / stem
+        print(file_path.resolve())
+        with file_path.open('w', encoding='utf-8') as f:
+            json.dump(data, f)
+
+    base_mbdc_path = Path('.') / 'mb_data_data_changes'
+    for stem, data in mb_data_data.items():
+        stem += '.json'
+        file_path = base_mbdc_path / stem
+        items = data['items'].values()
+        for item in items:
+            item['minPrice'] = max(0, item['minPrice'] + random.randint(-40, 10))
+
         print(file_path.resolve())
         with file_path.open('w', encoding='utf-8') as f:
             json.dump(data, f)

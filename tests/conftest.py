@@ -1,4 +1,5 @@
 import json
+import random
 from pathlib import Path
 
 import pytest
@@ -176,3 +177,25 @@ def mb_data_data_items(mb_data_data_parser):
         item_objs = [MBDataResponseItem(data)]
         item_data = [data]
     return item_data, item_objs
+
+MB_DATA_DATA_CHANGES = {}
+mb_data_data_changes_path = Path('.') / 'tests' / 'mb_data_data_changes'
+for file_name in mb_data_data_changes_path.glob('*.json'):
+    with file_name.open('r', encoding='utf-8') as f:
+        MB_DATA_DATA_CHANGES[file_name.stem] = json.load(f)
+"""Responses from /{region}/{item_ids}, keyed on {region_type}_{region}_{item_ids}"""
+
+@pytest.fixture
+def mb_data_data_changes():
+    return MB_DATA_DATA_CHANGES
+
+@pytest.fixture
+def mb_data_data_old_and_changes(mb_data_data_changes,
+                                 mb_data_data_parser,
+                                 mb_data_data_objs):
+    w_d_r, region, items_str, item_ids, old_data = mb_data_data_parser
+    key = f'{w_d_r}_{region}_{items_str}'
+    new_data = mb_data_data_changes[key]
+    old_resp_obj = mb_data_data_objs[1]
+
+    return old_data, old_resp_obj, new_data
