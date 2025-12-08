@@ -237,3 +237,8 @@ class UniversalisAPIWrapper:
 
         resp = cast(dict, await self.get_endpoint(endpoint, params=params))
         return resp
+
+    @staticmethod
+    def get_universalis_url(item: int) -> str:
+        """Generate a Universalis.app URL for the item ID."""
+        return f"https://universalis.app/market/{item}"
