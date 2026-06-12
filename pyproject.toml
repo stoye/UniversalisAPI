@@ -3,9 +3,9 @@ name = "universalisapi"
 version = "0.1.1"
 description = "A python wrapper for FFXIV Universalis"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 dependencies = [
-    "aiohttp>=3.11.11",
+    "aiohttp>=3.14.0",
     "async-property>=0.2.2",
 ]
 
@@ -17,7 +17,7 @@ docs = [
     "sphinx>=8.1.3"
 ]
 dev = [
-    "mypy>=1.14.1",
+    "mypy>=2.0",
 ]
 
 [tool.pytest.ini_options]
@@ -50,7 +50,7 @@ ignore_missing_imports = true
 dev = [
     "aioresponses>=0.7.7",
     "intersphinx-registry>=0.2412.7",
-    "jsonschema>=4.23.0",
+    "jsonschema>=4.26.0",
     "mypy>=1.14.1",
     "numpydoc>=1.8.0",
     "pydata-sphinx-theme>=0.16.1",
